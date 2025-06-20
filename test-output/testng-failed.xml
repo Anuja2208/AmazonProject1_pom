@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="Amazon1.TC_12CheckEachPaymentMethod">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="paymentMethodValidation" invocation-numbers="0 1"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_12CheckEachPaymentMethod -->
+      <class name="Amazon1.TC_11Checkout_AddressSelection">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="selectingAddressPaymentMethod" invocation-numbers="0 1"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_11Checkout_AddressSelection -->
+      <class name="Amazon1.TC_10ItemUpdateRemove">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="addRemoveproduct" invocation-numbers="0 1"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_10ItemUpdateRemove -->
+      <class name="Amazon1.TC_13ApplyCoupenCode">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="OrderingProuctWithCoupenCode" invocation-numbers="0 1"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_13ApplyCoupenCode -->
+      <class name="Amazon1.TC_14_5StarRatingOnLastOrderProduct">
+        <methods>
+          <include name="givingRatingforLastOrder" invocation-numbers="0"/>
+          <include name="browserLaunch"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_14_5StarRatingOnLastOrderProduct -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
