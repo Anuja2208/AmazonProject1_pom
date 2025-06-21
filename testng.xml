@@ -13,6 +13,10 @@
       <class name="Amazon1.TC_7ProductPageInfo"/>
       <class name="Amazon1.TC_8ProductSort"/>
       <class name="Amazon1.TC_9AddToCart"/>
+      <class name="Amazon1.TC_10ItemUpdateRemove" />
+	  <class name="Amazon1.TC_11Checkout_AddressSelection" />
+	  <class name="Amazon1.TC_12CheckEachPaymentMethod" />
+	  <class name="Amazon1.TC_13ApplyCoupenCode" />
       <class name="Amazon1.TC_14_5StarRatingOnLastOrderProduct" />
 	  <class name="Amazon1.TC_15GoToCartWithOutLogin" />
     </classes>

@@ -39,15 +39,19 @@ public void browserLaunch(String browserName)
 	}
 	driver.get("https://www.amazon.in");
 	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));  //Synchronization
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));  //Synchronization
 	
 	//Assert.assertEquals(driver.getTitle(), "Amazon.in: Online Shopping India - Buy mobiles, laptops, cameras, books, watches, apparel, shoes and e-Gift Cards. Free Shipping & Cash on Delivery Available.");
 }
     @AfterMethod
     public void browserQuit() 
-    {
-     
-          //  driver.quit();
+    { try {
+        driver.navigate().refresh();
+    } finally {
+        if (driver != null) {
+            driver.quit();
         }
+    }
+    }
 
 }

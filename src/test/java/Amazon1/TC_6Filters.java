@@ -15,8 +15,8 @@ import AmazonUtils.ITestListernsForTC;
 public class TC_6Filters extends AmazonBaseClass
 {
 	@Parameters("browser")
-	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class,retryAnalyzer = IRetryAnalizerforTC.class)
-	public void loginwithDDT(String usernameFromExcel, String passwordFromExcel, String nameFromExcel, String mobileNoFromExcel) throws InterruptedException
+	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class)//,retryAnalyzer = IRetryAnalizerforTC.class
+	public void loginwithDDT(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
 		if (driver == null) {
             System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");

@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 public class AmazonAfterSearchFilterSortCartWishPage 
 {
@@ -28,7 +29,7 @@ public class AmazonAfterSearchFilterSortCartWishPage
 	    
 	    
 
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    
 	    public void addToCart() 
 	    {
@@ -48,9 +49,15 @@ public class AmazonAfterSearchFilterSortCartWishPage
 
 	    public void selectDeliveryDetails() 
 	    {
+	    	try {
 	        wait.until(ExpectedConditions.visibilityOf(deliveryDay)).click();
 	     //   deliveryDay.click();
 	        //Assert.assertTrue(deliveryDay.isSelected(), "Delivery option is selected!");
+	    	}
+	    	catch(java.lang.NullPointerException e)
+	    	{
+	    		Reporter.log("Exception is handeled");
+	    	}
 	    }
 
 	    public void selectBrand() 

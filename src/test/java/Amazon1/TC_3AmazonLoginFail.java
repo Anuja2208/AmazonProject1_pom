@@ -17,7 +17,7 @@ public class TC_3AmazonLoginFail extends AmazonBaseClass
 
 	@Parameters("browser")
 	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class,retryAnalyzer = IRetryAnalizerforTC.class)
-	public void loginWithInvalidEmail(String usernameFromExcel, String passwordFromExcel, String nameFromExcel, String mobileNoFromExcel) throws InterruptedException
+	public void loginWithInvalidEmail(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
 		if (driver == null) {
             System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");

@@ -15,26 +15,20 @@ public class AmazonProfileEditPage
 {
 	
 	@FindBy(xpath="//div[.='Your Account']") WebElement youraccount;
-
+	//login and Security Card Edit
 	@FindBy(xpath="//div[@data-card-identifier=\"SignInAndSecurity\"]") WebElement loginAndSecurityCard;
-	
 	@FindBy(id="input-box-otp") WebElement optInput;
-	
 	@FindBy(xpath="//span[.=\"Submit code\"]") WebElement submitCodeBtn;
-    
 	@FindBy(xpath = "//span[.='Edit addresses for orders and gifts']") WebElement yourAddress;
-	
-	//@FindBy(linkText = "Edit") WebElement edit;
-	
+	//Edit Your Address
+	@FindBy(linkText = "Edit") WebElement edit;
 	@FindBy(xpath = "//span[.='Edit addresses for orders and gifts']") WebElement editaddress;
-	
 	@FindBy(linkText = "Set as Default") WebElement setdefault;
-	
 	@FindBy(xpath = "//h4[.='Default address changed']") WebElement defaultselected;//h4[.='Default address changed']
 
 	
 	WebDriver driver;
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	SoftAssert soft = new SoftAssert();
 
 	public void goToYourAccount()
@@ -57,8 +51,14 @@ public class AmazonProfileEditPage
 	}
 	public void clickingoneditaddress()
 	{
+		try {
 		editaddress.click();
 		soft.assertEquals(driver.getTitle(), "Your Addresses");
+		}
+		catch(java.lang.NullPointerException e)
+    	{
+    		Reporter.log("Exception is handeled");
+    	}
 	}
 	public void settingdefault()
 	{

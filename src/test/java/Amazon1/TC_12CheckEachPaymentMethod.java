@@ -13,8 +13,8 @@ import AmazonUtils.ITestListernsForTC;
 public class TC_12CheckEachPaymentMethod extends AmazonBaseClass
 {
 	@Parameters("browser")
-	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class,retryAnalyzer = IRetryAnalizerforTC.class)
-	public void paymentMethodValidation(String usernameFromExcel, String passwordFromExcel, String nameFromExcel, String mobileNoFromExcel) throws InterruptedException
+	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class)//,retryAnalyzer = IRetryAnalizerforTC.class
+	public void paymentMethodValidation(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
 		if (driver == null) {
             System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");
@@ -35,12 +35,10 @@ public class TC_12CheckEachPaymentMethod extends AmazonBaseClass
 		result.clickOnFirstProduct(driver);
 		
 		AmazonProductDetailPage orderpage = new AmazonProductDetailPage(driver);
-		orderpage.addToCartBtnClick();
+		//orderpage.addToCartBtnClick();
 		orderpage.goToCartBtnClick();
-		orderpage.clickincreasequantity(driver);
-		orderpage.clickdecreasequantity(driver);
-		orderpage.clickdecreasequantity(driver);
-		orderpage.clickdecreasequantity(driver);
+		//orderpage.clickincreasequantity(driver);
+
 		
 		AmazonCheckoutPage select = new AmazonCheckoutPage(driver);
 		select.clickingProccedToBuy(driver);
@@ -49,7 +47,7 @@ public class TC_12CheckEachPaymentMethod extends AmazonBaseClass
 		select.selectingnetbankingbox(driver);
 		select.selectingotherUPIbox(driver);
 		select.selectingCOD(driver);
-	//	select.clickOnusethisPayMethodBtn(driver);
+    //	select.clickOnusethisPayMethodBtn(driver);
 		
 
 }

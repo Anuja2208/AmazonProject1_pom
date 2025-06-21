@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [SuiteAmazon]" guice-stage="DEVELOPMENT" verbose="0">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="AmazonPractice.TC_8ProductSort">
+      <class name="Amazon1.TC_8ProductSort">
         <methods>
-          <include name="browserQuit"/>
           <include name="loginwithDDT" invocation-numbers="0"/>
           <include name="browserLaunch"/>
+          <include name="browserQuit"/>
         </methods>
-      </class> <!-- AmazonPractice.TC_8ProductSort -->
-      <class name="AmazonPractice.TC_1AmazonRegistration">
+      </class> <!-- Amazon1.TC_8ProductSort -->
+      <class name="Amazon1.TC_14_5StarRatingOnLastOrderProduct">
         <methods>
+          <include name="givingRatingforLastOrder" invocation-numbers="0"/>
+          <include name="browserLaunch"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_14_5StarRatingOnLastOrderProduct -->
+      <class name="Amazon1.TC_1AmazonRegistration">
+        <methods>
+          <include name="amazonBrowserLaunch"/>
           <include name="registration" invocation-numbers="0 1"/>
           <include name="browserQuit"/>
-          <include name="amazonBrowserLaunch"/>
         </methods>
-      </class> <!-- AmazonPractice.TC_1AmazonRegistration -->
-      <class name="AmazonPractice.TC_3AmazonLoginFail">
+      </class> <!-- Amazon1.TC_1AmazonRegistration -->
+      <class name="Amazon1.TC_13ApplyCoupenCode">
         <methods>
+          <include name="browserLaunch"/>
+          <include name="OrderingProuctWithCoupenCode" invocation-numbers="0 1"/>
           <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_13ApplyCoupenCode -->
+      <class name="Amazon1.TC_10ItemUpdateRemove">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="addRemoveproduct" invocation-numbers="0"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_10ItemUpdateRemove -->
+      <class name="Amazon1.TC_3AmazonLoginFail">
+        <methods>
+          <include name="browserLaunch"/>
           <include name="loginWithInvalidEmail" invocation-numbers="0 1"/>
-          <include name="browserLaunch"/>
-        </methods>
-      </class> <!-- AmazonPractice.TC_3AmazonLoginFail -->
-      <class name="AmazonPractice.TC_6Filters">
-        <methods>
           <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_3AmazonLoginFail -->
+      <class name="Amazon1.TC_11Checkout_AddressSelection">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="selectingAddressPaymentMethod" invocation-numbers="0"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_11Checkout_AddressSelection -->
+      <class name="Amazon1.TC_6Filters">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="loginwithDDT" invocation-numbers="0"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_6Filters -->
+      <class name="Amazon1.TC_4EditYourProfile">
+        <methods>
           <include name="loginwithDDT" invocation-numbers="0 1"/>
           <include name="browserLaunch"/>
-        </methods>
-      </class> <!-- AmazonPractice.TC_6Filters -->
-      <class name="AmazonPractice.TC_9AddToCart">
-        <methods>
           <include name="browserQuit"/>
-          <include name="loginwithDDT" invocation-numbers="0"/>
-          <include name="browserLaunch"/>
         </methods>
-      </class> <!-- AmazonPractice.TC_9AddToCart -->
-      <class name="AmazonPractice.TC_5AmazonSearchProduct">
-        <methods>
-          <include name="browserQuit"/>
-          <include name="loginwithDDT" invocation-numbers="0"/>
-          <include name="browserLaunch"/>
-        </methods>
-      </class> <!-- AmazonPractice.TC_5AmazonSearchProduct -->
-      <class name="AmazonPractice.TC_2AmazonLogin">
-        <methods>
-          <include name="browserQuit"/>
-          <include name="loginwithDDT" invocation-numbers="0"/>
-          <include name="browserLaunch"/>
-        </methods>
-      </class> <!-- AmazonPractice.TC_2AmazonLogin -->
-      <class name="AmazonPractice.TC_7ProductPageInfo">
-        <methods>
-          <include name="browserQuit"/>
-          <include name="loginwithDDT" invocation-numbers="0"/>
-          <include name="browserLaunch"/>
-        </methods>
-      </class> <!-- AmazonPractice.TC_7ProductPageInfo -->
-      <class name="AmazonPractice.TC_4EditYourProfile">
-        <methods>
-          <include name="browserQuit"/>
-          <include name="browserLaunch"/>
-          <include name="loginwithDDT" invocation-numbers="0 1"/>
-        </methods>
-      </class> <!-- AmazonPractice.TC_4EditYourProfile -->
+      </class> <!-- Amazon1.TC_4EditYourProfile -->
     </classes>
   </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [SuiteAmazon] -->
+</suite> <!-- Failed suite [Suite] -->

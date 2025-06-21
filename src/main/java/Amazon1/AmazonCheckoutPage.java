@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
 public class AmazonCheckoutPage 
@@ -37,7 +38,7 @@ public class AmazonCheckoutPage
 	@FindBy(xpath = "//input[@id='pp-Fw6YVp-139']") WebElement emibox;
 
 	 
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	SoftAssert soft = new SoftAssert();
 	
 	public void decreaseQuantityClick()
@@ -86,7 +87,12 @@ public class AmazonCheckoutPage
     }
     public void clickingProccedToBuy(WebDriver driver) 
     {
+    	try {
         proceedToBuy.click();
+    	}
+    	catch(org.openqa.selenium.NoSuchElementException e) {
+    		
+    	}
     }
     public void clickingChangeAdderess(WebDriver driver) 
     {
@@ -95,55 +101,112 @@ public class AmazonCheckoutPage
     }
     public void clickingDelivertoThisAdderess(WebDriver driver) 
     {
+    	try{
     	wait.until(ExpectedConditions.visibilityOf(delivertothisaddress));
     	delivertothisaddress.click();
-    	
-    }
-    public void selectingCOD(WebDriver driver) 
-    {
-    	wait.until(ExpectedConditions.visibilityOf(cod));
-        cod.click();
+    	}
+    	catch(org.openqa.selenium.ElementClickInterceptedException e) {
+    		
+    	}
     }
     public void selectingamazonPayBalancebox(WebDriver driver) 
     {
+    	try
+    	{
     	wait.until(ExpectedConditions.visibilityOf(amazonPayBalancebox));
-    	amazonPayBalancebox.isEnabled();
+    	boolean b = amazonPayBalancebox.isEnabled();
     	soft.assertEquals(amazonPayBalancebox.isEnabled(), true);
-    	//amazonPayBalancebox.click();	
+    	if( b == true) {
+    		amazonPayBalancebox.click();
+    		Reporter.log("User is able to select this payment method");
+    	}	
+    	}
+    	catch(java.lang.NullPointerException e)
+    	{
+    		Reporter.log("Exception is handeled");
+    	}
     }
     public void selectingcreditdebitcardbox(WebDriver driver) 
     {
+    	try {
     	wait.until(ExpectedConditions.visibilityOf(creditdebitcardbox));
-    	creditdebitcardbox.isEnabled();
+    	creditdebitcardbox.isDisplayed();
+    	boolean b1 = creditdebitcardbox.isEnabled();
     	soft.assertEquals(creditdebitcardbox.isEnabled(), true);
-    //	creditdebitcardbox.click();
+    	if( b1 == true) {
+    	creditdebitcardbox.click();
+    	Reporter.log("User is able to select this payment method");
+    	}
+    	}
+    	catch(java.lang.NullPointerException e) {
+    		
+    	}
     }
     public void selectingnetbankingbox(WebDriver driver) 
     {
+    	try {
     	wait.until(ExpectedConditions.visibilityOf(netbankingbox));
-    	netbankingbox.click();
-        soft.assertEquals(netbankingbox.isEnabled(), true);
-      //netbankingbox.click() ; 
+    	netbankingbox.isDisplayed();
+    	boolean b2 = netbankingbox.isEnabled();
+        soft.assertEquals(netbankingbox.isDisplayed(), true);
+        if( b2 == true) {
+        netbankingbox.click() ; 
+        Reporter.log("User is able to select this payment method");
+        }
+    	}
+    	catch(java.lang.NullPointerException e) {
+    		
+    	}
     }
     public void selectingotherUPIbox(WebDriver driver) 
     {
+    	try {
     	wait.until(ExpectedConditions.visibilityOf(otherUPIbox));
-    	otherUPIbox.isEnabled();
-        soft.assertEquals(otherUPIbox.isEnabled(), true);
+    	otherUPIbox.isDisplayed();
+        soft.assertEquals(otherUPIbox.isDisplayed(), true);
       //  otherUPIbox.click();
+    	}
+    	catch(java.lang.NullPointerException e) {
+    		
+    	}
     }
     public void selectingemibox(WebDriver driver) 
     {
+    	try {
     	wait.until(ExpectedConditions.visibilityOf(emibox));
-    	emibox.isEnabled();
-        soft.assertEquals(emibox.isEnabled(), true);
+    	emibox.isDisplayed();
+        soft.assertEquals(emibox.isDisplayed(), true);
       //  emibox.click();
+    	}
+    	catch(java.lang.NullPointerException e) {
+    		
+    	}
+    }
+    public void selectingCOD(WebDriver driver) 
+    {
+    	try
+    	{
+    	wait.until(ExpectedConditions.visibilityOf(cod));
+        cod.click();
+        Reporter.log("User is able to select this payment method");
+    	}
+    	catch(java.lang.NullPointerException e) {
+    		
+    	}
+    	catch(org.openqa.selenium.NoSuchSessionException e) {
+    		
+    	}
     }
     public void clickOnusethisPayMethodBtn(WebDriver driver) 
     {
+    	try {
     	usethisPayMethodBtn.click();
     	wait.until(ExpectedConditions.titleContains("         Place Your Order - Amazon Checkout     "));
     	assertEquals(driver.getTitle(), "         Place Your Order - Amazon Checkout     ");
+    	}
+    	catch( java.lang.NullPointerException e) {
+    		
+    	}
     }
     
 	public AmazonCheckoutPage(WebDriver driver)

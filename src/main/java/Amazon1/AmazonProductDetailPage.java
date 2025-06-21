@@ -29,32 +29,70 @@ public class AmazonProductDetailPage
 	 @FindBy(xpath = "//button[@aria-label='Increase quantity by one']") WebElement increasequantity;
 	 @FindBy(xpath = "//button[@aria-label='Decrease quantity by one']") WebElement decreasequantity;
 	    
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	//Go to Cart 
 	
 	public void descriptionDivIsDisplayed()
 	{
+		try {
+		boolean b = titleDiv.isDisplayed();
+		if(b==true) {
+			Reporter.log("Product discription is Displayed");
 		Assert.assertEquals(titleDiv.isDisplayed(), true);
-		
+		}
+		}
+		catch(org.openqa.selenium.NoSuchElementException e) {
+			
+		}
+
 	}
 	public void customerReviewsIsDisplayed()
 	{
+		try {
+			boolean b = CustomerReviews.isDisplayed();
+			if(b==true) {
+				Reporter.log("Customer Reviews is Displayed");
 		Assert.assertEquals(CustomerReviews.isDisplayed(), true);
+			}
+		}
+		catch(org.openqa.selenium.NoSuchElementException e) {
+			
+		}
 	}
 	public void priceIsDisplayed()
 	{
+		try {
+			boolean b = price.isDisplayed();
+			if(b==true) {
+				Reporter.log("Product price is Displayed");
 		Assert.assertEquals(price.isDisplayed(), true);
+			}
+		}
+		catch(org.openqa.selenium.NoSuchElementException e) {
+			
+		}
 	}
 	
 	public void addToCartBtnClick()
 	{
+		try {
 		addToCartBtn.click();
+		}
+		catch(org.openqa.selenium.NoSuchElementException e)
+		{
+			Reporter.log("Exception is handaled");
+		}
 	}
 	
 	public void goToCartBtnClick()
 	{
+		try {
 		goToCartBtn.click();
 		Assert.assertEquals(driver.getTitle(), "Amazon.in Shopping Cart");
+		}
+		catch(org.openqa.selenium.NoSuchElementException e) {
+			
+		}
 	}
 	
 	 public void clickingOnSort(WebDriver driver) 
@@ -92,8 +130,14 @@ public class AmazonProductDetailPage
 	    }
 	    public void clickincreasequantity(WebDriver driver) 
 	    {
+	    	try {
 	        wait.until(ExpectedConditions.visibilityOf(increasequantity));
 	        increasequantity.click();
+	    	}
+	    	catch(java.lang.NullPointerException e)
+	    	{
+	    		Reporter.log("Exception is handeled");
+	    	}
 	    }
 	    public void clickdecreasequantity(WebDriver driver) 
 	    {

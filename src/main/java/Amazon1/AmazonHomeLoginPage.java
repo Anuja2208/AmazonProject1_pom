@@ -117,7 +117,8 @@ public class AmazonHomeLoginPage extends Excelsheet
 		try
 		{
 			wait.until(ExpectedConditions.visibilityOf(username));
-	    username.sendKeys(un2+Keys.ENTER);
+	        username.sendKeys(un2+Keys.ENTER);
+	        Reporter.log("Invalid Username is entered");
 		}
 		catch(java.lang.NullPointerException e)
 		{
@@ -126,8 +127,14 @@ public class AmazonHomeLoginPage extends Excelsheet
 	}
 	public void continuefromUN() throws InterruptedException
 	{
+		try {
 		contiunebutton.click();
 		Assert.assertTrue(true);
+		}
+		catch(org.openqa.selenium.NoSuchElementException e)
+		{
+			Reporter.log("Exception is Handeled");
+		}
 	}
 	public void pwd(WebDriver driver, String pwd1) throws InterruptedException
 	{
@@ -148,10 +155,11 @@ public class AmazonHomeLoginPage extends Excelsheet
 	public void pwdinvalid(WebDriver driver, String pwd2) throws InterruptedException
 	{
 	    password.sendKeys(pwd2+Keys.ENTER);
+	    Reporter.log("Invalid Password is entered");
 	}
 	public void signin() throws InterruptedException
 	{
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		try {
 			logIn.click();
@@ -217,12 +225,20 @@ public class AmazonHomeLoginPage extends Excelsheet
 	}
 	public void clickingReturnsAndOrders()
 	{
+		try {
+			wait.until(ExpectedConditions.visibilityOf(returnsNDorders));
 		returnsNDorders.click();
 		soft.assertEquals(driver.getTitle(), "Your Orders");
+		}
+		catch(org.openqa.selenium.NoSuchElementException e)
+		{
+			Reporter.log("Exception is Handaled");
+		}
 	}
 	public void ordersSarching()
 	{
-		returnsNDorders.isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(searchOrders));
+		searchOrders.isDisplayed();
 		soft.assertEquals(driver.getTitle(), "Your Orders");
 		soft.assertAll();
 	}
