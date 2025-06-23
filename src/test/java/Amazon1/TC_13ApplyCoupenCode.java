@@ -30,17 +30,11 @@ public class TC_13ApplyCoupenCode extends AmazonBaseClass
 		login.verifyAccount();
 		login.searching();
 		
-		
 		AmazonSearchResultPage result = new AmazonSearchResultPage(driver);
 		result.clickOnFirstProduct(driver);
 		
 		AmazonProductDetailPage orderpage = new AmazonProductDetailPage(driver);
-		orderpage.addToCartBtnClick();
 		orderpage.goToCartBtnClick();
-		orderpage.clickincreasequantity(driver);
-		orderpage.clickdecreasequantity(driver);
-		orderpage.clickdecreasequantity(driver);
-		orderpage.clickdecreasequantity(driver);
 		
 		AmazonCheckoutPage select = new AmazonCheckoutPage(driver);
 		select.clickingProccedToBuy(driver);

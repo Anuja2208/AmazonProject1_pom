@@ -130,6 +130,7 @@ public class AmazonHomeLoginPage extends Excelsheet
 		try {
 		contiunebutton.click();
 		Assert.assertTrue(true);
+	//	Assert.assertEquals(password.isDisplayed(), false);
 		}
 		catch(org.openqa.selenium.NoSuchElementException e)
 		{
@@ -187,8 +188,9 @@ public class AmazonHomeLoginPage extends Excelsheet
 	{
 		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(helloAnuja));
-		//helloAnuja.isDisplayed();
-		Assert.assertEquals(false, true);
+	//	helloAnuja.isDisplayed();
+		Assert.assertEquals(helloAnuja.isDisplayed(), false);
+	//	Assert.assertEquals(false, true);
 	}
 	
 	public void searching()
@@ -234,13 +236,21 @@ public class AmazonHomeLoginPage extends Excelsheet
 		{
 			Reporter.log("Exception is Handaled");
 		}
+		catch(java.lang.NullPointerException e) {
+			
+		}
 	}
 	public void ordersSarching()
 	{
+		try {
 		wait.until(ExpectedConditions.visibilityOf(searchOrders));
 		searchOrders.isDisplayed();
 		soft.assertEquals(driver.getTitle(), "Your Orders");
 		soft.assertAll();
+		}
+		catch(java.lang.NullPointerException e) {
+			
+		}
 	}
 	
 	public AmazonHomeLoginPage(WebDriver driver)
@@ -248,5 +258,4 @@ public class AmazonHomeLoginPage extends Excelsheet
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
 }

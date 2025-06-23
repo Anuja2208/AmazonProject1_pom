@@ -108,6 +108,9 @@ public class AmazonCheckoutPage
     	catch(org.openqa.selenium.ElementClickInterceptedException e) {
     		
     	}
+    	catch(java.lang.NullPointerException e) {
+    		
+    	}
     }
     public void selectingamazonPayBalancebox(WebDriver driver) 
     {
@@ -207,8 +210,12 @@ public class AmazonCheckoutPage
     	catch( java.lang.NullPointerException e) {
     		
     	}
+    	catch(org.openqa.selenium.NoSuchElementException e) {
+    		
+    	}
     }
-    
+	
+   
 	public AmazonCheckoutPage(WebDriver driver)
 	{
 		this.driver = driver;

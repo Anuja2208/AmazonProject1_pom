@@ -1,0 +1,511 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/2/2</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 22 13:00:02 EDT 2025</td>
+</tr>
+<tr><td>Total time:</td><td>509 seconds (509944 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Amazon1.TC_1AmazonRegistration.registration()'><b>registration</b><br>Test class: Amazon1.TC_1AmazonRegistration</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void Amazon1.TC_1AmazonRegistration.registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: registration([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3])
+Arguments: [(java.lang.String) ,(java.lang.String) 0,(java.lang.String) ]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1553239278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1553239278'><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void Amazon1.TC_1AmazonRegistration.registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: registration([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3])
+Arguments: [(java.lang.String) ,(java.lang.String) 0,(java.lang.String) ]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>Amazon1.TC_1AmazonRegistration@441772e</td></tr>
+<tr>
+<td title='Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail()'><b>loginWithInvalidEmail</b><br>Test class: Amazon1.TC_3AmazonLoginFail<br>Parameters: anujagaikwad86@gmail.com, anuja@89<br/>
+<a href="#Output-128488611" onClick='toggleBox("Output-128488611", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-128488611" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-128488611">
+Exception is handaled<br/>
+Invalid Username is entered<br/>
+Invalid Password is entered<br/>
+Exception is Handeled<br/>
+Test case failed: loginWithInvalidEmail<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
+	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace128488611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace128488611'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
+	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>59</td>
+<td>Amazon1.TC_3AmazonLoginFail@37afeb11</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Amazon1.TC_10ItemUpdateRemove.addRemoveproduct()'><b>addRemoveproduct</b><br>Test class: Amazon1.TC_10ItemUpdateRemove<br>Parameters: , <br/>
+<a href="#Output-1192749367" onClick='toggleBox("Output-1192749367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1192749367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1192749367">
+Exception is handaled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handaled<br/>
+Exception is handeled<br/>
+Exception is handeled<br/>
+Test case passed: addRemoveproduct<br/>
+</div>
+</td>
+<td></td>
+<td>196</td>
+<td>Amazon1.TC_10ItemUpdateRemove@5c5eefef</td></tr>
+<tr>
+<td title='Amazon1.TC_13ApplyCoupenCode.OrderingProuctWithCoupenCode()'><b>OrderingProuctWithCoupenCode</b><br>Test class: Amazon1.TC_13ApplyCoupenCode<br>Parameters: , <br/>
+<a href="#Output-2043889780" onClick='toggleBox("Output-2043889780", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2043889780" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2043889780">
+Exception is handaled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handaled<br/>
+Exception is handeled<br/>
+Test case passed: OrderingProuctWithCoupenCode<br/>
+</div>
+</td>
+<td></td>
+<td>174</td>
+<td>Amazon1.TC_13ApplyCoupenCode@595b007d</td></tr>
+<tr>
+<td title='Amazon1.TC_14_5StarRatingOnLastOrderProduct.givingRatingforLastOrder()'><b>givingRatingforLastOrder</b><br>Test class: Amazon1.TC_14_5StarRatingOnLastOrderProduct<br>Parameters: , <br/>
+<a href="#Output-1197475336" onClick='toggleBox("Output-1197475336", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1197475336" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1197475336">
+Exception is handaled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Test case passed: givingRatingforLastOrder<br/>
+</div>
+</td>
+<td></td>
+<td>146</td>
+<td>Amazon1.TC_14_5StarRatingOnLastOrderProduct@72d1ad2e</td></tr>
+<tr>
+<td title='Amazon1.TC_5AmazonSearchProduct.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_5AmazonSearchProduct<br>Parameters: , <br/>
+<a href="#Output-383905681" onClick='toggleBox("Output-383905681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-383905681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-383905681">
+Exception is handaled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Test case passed: loginwithDDT<br/>
+</div>
+</td>
+<td></td>
+<td>116</td>
+<td>Amazon1.TC_5AmazonSearchProduct@dd8ba08</td></tr>
+<tr>
+<td title='Amazon1.TC_9AddToCart.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_9AddToCart<br>Parameters: , <br/>
+<a href="#Output-180010251" onClick='toggleBox("Output-180010251", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-180010251" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-180010251">
+Exception is handaled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handaled<br/>
+Exception is handaled<br/>
+Test case passed: loginwithDDT<br/>
+</div>
+</td>
+<td></td>
+<td>146</td>
+<td>Amazon1.TC_9AddToCart@222545dc</td></tr>
+<tr>
+<td title='Amazon1.TC_11Checkout_AddressSelection.selectingAddressPaymentMethod()'><b>selectingAddressPaymentMethod</b><br>Test class: Amazon1.TC_11Checkout_AddressSelection<br>Parameters: , <br/>
+<a href="#Output-2073020156" onClick='toggleBox("Output-2073020156", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2073020156" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2073020156">
+Exception is handaled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handaled<br/>
+Exception is handaled<br/>
+Test case passed: selectingAddressPaymentMethod<br/>
+</div>
+</td>
+<td></td>
+<td>214</td>
+<td>Amazon1.TC_11Checkout_AddressSelection@16293aa2</td></tr>
+<tr>
+<td title='Amazon1.TC_2AmazonLogin.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_2AmazonLogin<br>Parameters: , <br/>
+<a href="#Output-218503571" onClick='toggleBox("Output-218503571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-218503571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-218503571">
+Exception is handaled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Test case passed: loginwithDDT<br/>
+</div>
+</td>
+<td></td>
+<td>88</td>
+<td>Amazon1.TC_2AmazonLogin@52bf72b5</td></tr>
+<tr>
+<td title='Amazon1.TC_7ProductPageInfo.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_7ProductPageInfo<br>Parameters: , <br/>
+<a href="#Output-1088412330" onClick='toggleBox("Output-1088412330", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1088412330" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1088412330">
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handaled<br/>
+Test case passed: loginwithDDT<br/>
+</div>
+</td>
+<td></td>
+<td>157</td>
+<td>Amazon1.TC_7ProductPageInfo@6c64cb25</td></tr>
+<tr>
+<td title='Amazon1.TC_8ProductSort.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_8ProductSort<br>Parameters: , <br/>
+<a href="#Output-1702544866" onClick='toggleBox("Output-1702544866", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1702544866" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1702544866">
+Exception is handaled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handaled<br/>
+Exception is Handaled<br/>
+Test case passed: loginwithDDT<br/>
+</div>
+</td>
+<td></td>
+<td>154</td>
+<td>Amazon1.TC_8ProductSort@6ae5aa72</td></tr>
+<tr>
+<td title='Amazon1.TC_15GoToCartWithOutLogin.GoingToCartwithoutLogin()'><b>GoingToCartwithoutLogin</b><br>Test class: Amazon1.TC_15GoToCartWithOutLogin<br/>
+<a href="#Output-2084496002" onClick='toggleBox("Output-2084496002", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2084496002" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2084496002">
+Exception is handaled<br/>
+Exception is Handaled<br/>
+Test case passed: GoingToCartwithoutLogin<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>Amazon1.TC_15GoToCartWithOutLogin@2d7275fc</td></tr>
+<tr>
+<td title='Amazon1.TC_12CheckEachPaymentMethod.paymentMethodValidation()'><b>paymentMethodValidation</b><br>Test class: Amazon1.TC_12CheckEachPaymentMethod<br>Parameters: , <br/>
+<a href="#Output-784151553" onClick='toggleBox("Output-784151553", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-784151553" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-784151553">
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handaled<br/>
+Exception is handeled<br/>
+Test case passed: paymentMethodValidation<br/>
+</div>
+</td>
+<td></td>
+<td>247</td>
+<td>Amazon1.TC_12CheckEachPaymentMethod@5158b42f</td></tr>
+<tr>
+<td title='Amazon1.TC_6Filters.applyingFilters()'><b>applyingFilters</b><br>Test class: Amazon1.TC_6Filters<br>Parameters: , <br/>
+<a href="#Output-1650272544" onClick='toggleBox("Output-1650272544", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1650272544" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1650272544">
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is handeled<br/>
+Exception is handeled<br/>
+Exception is handeled<br/>
+Test case passed: applyingFilters<br/>
+</div>
+</td>
+<td></td>
+<td>178</td>
+<td>Amazon1.TC_6Filters@245b4bdc</td></tr>
+<tr>
+<td title='Amazon1.TC_4EditYourProfile.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_4EditYourProfile<br>Parameters: , <br/>
+<a href="#Output-1925886036" onClick='toggleBox("Output-1925886036", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1925886036" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1925886036">
+Exception is handaled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is Handeled<br/>
+Exception is handaled<br/>
+Exception is handeled<br/>
+Exception is handeled<br/>
+Exception is handeled<br/>
+Test case passed: loginwithDDT<br/>
+</div>
+</td>
+<td></td>
+<td>178</td>
+<td>Amazon1.TC_4EditYourProfile@515aebb0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail()'><b>loginWithInvalidEmail</b><br>Test class: Amazon1.TC_3AmazonLoginFail<br>Parameters: anujagaikwad86@gmail.com, anuja@89<br/>
+<a href="#Output-1765504946" onClick='toggleBox("Output-1765504946", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1765504946" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1765504946">
+Invalid Username is entered<br/>
+Invalid Password is entered<br/>
+Exception is Handeled<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
+	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1765504946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1765504946'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
+	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>65</td>
+<td>Amazon1.TC_3AmazonLoginFail@37afeb11</td></tr>
+<tr>
+<td title='Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail()'><b>loginWithInvalidEmail</b><br>Test class: Amazon1.TC_3AmazonLoginFail<br>Parameters: anujagaikwad86@gmail.com, anuja@89<br/>
+<a href="#Output-289404625" onClick='toggleBox("Output-289404625", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-289404625" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-289404625">
+Invalid Username is entered<br/>
+Invalid Password is entered<br/>
+Exception is Handeled<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
+	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace289404625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace289404625'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
+	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>51</td>
+<td>Amazon1.TC_3AmazonLoginFail@37afeb11</td></tr>
+</table><p>
+</body>
+</html>

@@ -32,11 +32,10 @@ public class TC_8ProductSort extends AmazonBaseClass
 		login.verifyAccount();
 		login.searching();
 		
+		//Sort before clicking 1st product
 		AmazonProductDetailPage sort = new AmazonProductDetailPage(driver);
 		sort.clickingOnSort(driver);
 		sort.selectingpriceLowTOHigh(driver);
-		
-		
 	}	
 	
 

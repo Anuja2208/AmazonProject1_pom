@@ -9,7 +9,7 @@ import AmazonUtils.IRetryAnalizerforTC;
 public class TC_1AmazonRegistration extends AmazonRegiBaseClass
 {
 
-	@Test(dataProvider="loginData1",dataProviderClass = DataSheetForRegistration.class)//,retryAnalyzer = IRetryAnalizerforTC.class
+	@Test(dataProvider="loginData1",dataProviderClass = DataSheetForRegistration.class,retryAnalyzer = IRetryAnalizerforTC.class)
 	public void registration(String usernameFromExcel, String passwordFromExcel, String nameFromExcel, String mobileNoFromExcel) throws InterruptedException
 	{
 		//AmazonHomeLoginPage home = new AmazonHomeLoginPage(driver);

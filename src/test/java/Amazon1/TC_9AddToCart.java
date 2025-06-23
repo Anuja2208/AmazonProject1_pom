@@ -41,8 +41,6 @@ public class TC_9AddToCart extends AmazonBaseClass
 		
 		AmazonProductDetailPage addcart = new AmazonProductDetailPage(driver);
 		addcart.addToCartBtnClick();
-		
-
 	}
 
 		

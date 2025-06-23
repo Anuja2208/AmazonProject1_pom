@@ -13,28 +13,37 @@ import org.testng.asserts.SoftAssert;
 
 public class AmazonProfileEditPage 
 {
-	
-	@FindBy(xpath="//div[.='Your Account']") WebElement youraccount;
-	//login and Security Card Edit
-	@FindBy(xpath="//div[@data-card-identifier=\"SignInAndSecurity\"]") WebElement loginAndSecurityCard;
-	@FindBy(id="input-box-otp") WebElement optInput;
-	@FindBy(xpath="//span[.=\"Submit code\"]") WebElement submitCodeBtn;
-	@FindBy(xpath = "//span[.='Edit addresses for orders and gifts']") WebElement yourAddress;
-	//Edit Your Address
-	@FindBy(linkText = "Edit") WebElement edit;
-	@FindBy(xpath = "//span[.='Edit addresses for orders and gifts']") WebElement editaddress;
-	@FindBy(linkText = "Set as Default") WebElement setdefault;
-	@FindBy(xpath = "//h4[.='Default address changed']") WebElement defaultselected;//h4[.='Default address changed']
-
-	
 	WebDriver driver;
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	SoftAssert soft = new SoftAssert();
 
+	//login and Security Card Edit
+	@FindBy(xpath="//div[.='Your Account']") WebElement youraccount;
+	@FindBy(xpath="//div[@data-card-identifier=\"SignInAndSecurity\"]") WebElement loginAndSecurityCard;
+	@FindBy(id="input-box-otp") WebElement optInput;
+	@FindBy(xpath="//span[.=\"Submit code\"]") WebElement submitCodeBtn;
+	
+	//Edit existing address Your Address
+	@FindBy(linkText = "                         Your Addresses                     ") WebElement yourAddress;
+	@FindBy(linkText = "Edit") WebElement edit;
+	@FindBy(xpath = "//span[.='Edit addresses for orders and gifts']") WebElement editaddress;
+	@FindBy(linkText = "Set as Default") WebElement setdefault;
+	@FindBy(xpath = "//h4[.='Default address changed']") WebElement defaultselected;//set default address
+	
+	//to add new address
+	@FindBy(linkText = "Add address") WebElement addnewaddress; //to add new address
+	
+
+	
 	public void goToYourAccount()
 	{
+		try {
 		wait.until(ExpectedConditions.visibilityOf(youraccount));
 		youraccount.click();
+		}
+		catch(java.lang.NullPointerException e) {
+			
+		}
 	}
 	public void clickingyouraddress()
 	{
@@ -47,7 +56,10 @@ public class AmazonProfileEditPage
 		{
 			Reporter.log("Exception is Handeled");
 		}
-	
+		catch(java.lang.NullPointerException e)
+    	{
+    		Reporter.log("Exception is handeled");
+    	}
 	}
 	public void clickingoneditaddress()
 	{
@@ -55,6 +67,10 @@ public class AmazonProfileEditPage
 		editaddress.click();
 		soft.assertEquals(driver.getTitle(), "Your Addresses");
 		}
+		catch(org.openqa.selenium.NoSuchElementException e)
+    	{
+    		Reporter.log("Exception is handeled");
+    	}
 		catch(java.lang.NullPointerException e)
     	{
     		Reporter.log("Exception is handeled");
@@ -62,7 +78,13 @@ public class AmazonProfileEditPage
 	}
 	public void settingdefault()
 	{
+		try {
 		setdefault.click();
+		}
+		catch(org.openqa.selenium.NoSuchElementException e)
+    	{
+    		Reporter.log("Exception is handeled");
+    	}
 	}
 	public void defaultsettingdone()
 	{

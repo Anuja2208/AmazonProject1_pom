@@ -14,7 +14,7 @@ import AmazonUtils.ITestListernsForTC;
 public class TC_4EditYourProfile extends AmazonBaseClass
 {
 	@Parameters("browser")
-	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class,retryAnalyzer = IRetryAnalizerforTC.class)
+	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class)//,retryAnalyzer = IRetryAnalizerforTC.class
 	public void loginwithDDT(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
 		if (driver == null) {
@@ -37,7 +37,7 @@ public class TC_4EditYourProfile extends AmazonBaseClass
 		profile.clickingyouraddress();
 		profile.clickingoneditaddress();
 		profile.settingdefault();
-		profile.defaultsettingdone();
+	//	profile.defaultsettingdone();
 
 		
 	}

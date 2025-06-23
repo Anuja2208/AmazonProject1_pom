@@ -37,10 +37,6 @@ public class TC_11Checkout_AddressSelection extends AmazonBaseClass
 		AmazonProductDetailPage orderpage = new AmazonProductDetailPage(driver);
 		orderpage.addToCartBtnClick();
 		orderpage.goToCartBtnClick();
-		orderpage.clickincreasequantity(driver);
-		orderpage.clickdecreasequantity(driver);
-		orderpage.clickdecreasequantity(driver);
-		orderpage.clickdecreasequantity(driver);
 		
 		AmazonCheckoutPage checkout = new AmazonCheckoutPage(driver);
 		checkout.clickingProccedToBuy(driver);

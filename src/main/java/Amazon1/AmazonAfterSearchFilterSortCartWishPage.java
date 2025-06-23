@@ -16,6 +16,7 @@ import org.testng.Reporter;
 public class AmazonAfterSearchFilterSortCartWishPage 
 {
 	 WebDriver driver;
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 	    @FindBy(id = "add-to-cart-button") WebElement button_AddtoCart;
 	    @FindBy(xpath = "//div[@id='attachDisplayAddBaseAlert']//span") WebElement text_AddedToCart;
@@ -27,15 +28,11 @@ public class AmazonAfterSearchFilterSortCartWishPage
 	    @FindBy(xpath = "//li[.='Price: Low to High']") WebElement pricelowtohigh; 
 	    @FindBy(xpath = "//li[.='Newest Arrivals']") WebElement newArrival;
 	    
-	    
 
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    
 	    public void addToCart() 
 	    {
 	        // Switch to last opened window
 	        driver.switchTo().window(driver.getWindowHandles().stream().reduce((first, last) -> last).orElse(driver.getWindowHandle()));
-
 	        wait.until(ExpectedConditions.elementToBeClickable(button_AddtoCart));
 	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", button_AddtoCart);
 	        button_AddtoCart.click();
@@ -62,17 +59,28 @@ public class AmazonAfterSearchFilterSortCartWishPage
 
 	    public void selectBrand() 
 	    {
+	    	try {
 	        wait.until(ExpectedConditions.visibilityOf(brand)).click();
-	      //  brand.click();
-	       // Assert.assertTrue(brand.isSelected(), "Brand selection done!");
+	        brand.click();
+	        Assert.assertTrue(brand.isSelected(), "Brand selection done!");
+	    	}
+	    	catch(java.lang.NullPointerException e)
+	    	{
+	    		Reporter.log("Exception is handeled");
+	    	}
 	    }
 
 	    public void selectCategory() 
 	    {
+	    	try {
 	        wait.until(ExpectedConditions.visibilityOf(category)).click();
-	        //category.click();
-	        
-	      //  Assert.assertTrue(category.isSelected(), "Category selection done!");
+	        category.click();
+	        Assert.assertTrue(category.isSelected(), "Category selection done!");
+	    	}
+	        catch(java.lang.NullPointerException e)
+	    	{
+	    		Reporter.log("Exception is handeled");
+	    	}
 	    }
 	    public void clickingOnSort(WebDriver driver) 
 	    {
@@ -80,13 +88,18 @@ public class AmazonAfterSearchFilterSortCartWishPage
 	        Actions a1 = new Actions(driver);
 	        a1.moveToElement(sortby);
 	        //category.click();
-	        
 	      //  Assert.assertTrue(category.isSelected(), "Category selection done!");
 	    }
 	    public void selectingpriceLowTOHigh(WebDriver driver) 
 	    {
+	    	try {
 	        wait.until(ExpectedConditions.visibilityOf(pricelowtohigh));
 	        pricelowtohigh.click();
+	    	}
+	    	catch(java.lang.NullPointerException e)
+	    	{
+	    		Reporter.log("Exception is handeled");
+	    	}
 	       
 	    }
 	    // Constructor

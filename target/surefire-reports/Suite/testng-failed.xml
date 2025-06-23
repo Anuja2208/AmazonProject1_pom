@@ -4,20 +4,69 @@
   <test thread-count="5" name="Test(failed)" verbose="0">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="Amazon1.TC_8ProductSort">
-        <methods>
-          <include name="loginwithDDT" invocation-numbers="0"/>
-          <include name="browserLaunch"/>
-          <include name="browserQuit"/>
-        </methods>
-      </class> <!-- Amazon1.TC_8ProductSort -->
       <class name="Amazon1.TC_14_5StarRatingOnLastOrderProduct">
         <methods>
-          <include name="givingRatingforLastOrder" invocation-numbers="0"/>
+          <include name="givingRatingforLastOrder"/>
           <include name="browserLaunch"/>
           <include name="browserQuit"/>
         </methods>
       </class> <!-- Amazon1.TC_14_5StarRatingOnLastOrderProduct -->
+      <class name="Amazon1.TC_13ApplyCoupenCode">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="OrderingProuctWithCoupenCode"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_13ApplyCoupenCode -->
+      <class name="Amazon1.TC_3AmazonLoginFail">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="loginWithInvalidEmail" invocation-numbers="0"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_3AmazonLoginFail -->
+      <class name="Amazon1.TC_11Checkout_AddressSelection">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="selectingAddressPaymentMethod"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_11Checkout_AddressSelection -->
+      <class name="Amazon1.TC_6Filters">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="loginwithDDT"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_6Filters -->
+      <class name="Amazon1.TC_5AmazonSearchProduct">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="loginwithDDT"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_5AmazonSearchProduct -->
+      <class name="Amazon1.TC_2AmazonLogin">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="loginwithDDT"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_2AmazonLogin -->
+      <class name="Amazon1.TC_7ProductPageInfo">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="loginwithDDT"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_7ProductPageInfo -->
+      <class name="Amazon1.TC_8ProductSort">
+        <methods>
+          <include name="loginwithDDT"/>
+          <include name="browserLaunch"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- Amazon1.TC_8ProductSort -->
       <class name="Amazon1.TC_1AmazonRegistration">
         <methods>
           <include name="amazonBrowserLaunch"/>
@@ -25,44 +74,30 @@
           <include name="browserQuit"/>
         </methods>
       </class> <!-- Amazon1.TC_1AmazonRegistration -->
-      <class name="Amazon1.TC_13ApplyCoupenCode">
+      <class name="Amazon1.TC_12CheckEachPaymentMethod">
         <methods>
           <include name="browserLaunch"/>
-          <include name="OrderingProuctWithCoupenCode" invocation-numbers="0 1"/>
+          <include name="paymentMethodValidation"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- Amazon1.TC_13ApplyCoupenCode -->
+      </class> <!-- Amazon1.TC_12CheckEachPaymentMethod -->
       <class name="Amazon1.TC_10ItemUpdateRemove">
         <methods>
           <include name="browserLaunch"/>
-          <include name="addRemoveproduct" invocation-numbers="0"/>
+          <include name="addRemoveproduct"/>
           <include name="browserQuit"/>
         </methods>
       </class> <!-- Amazon1.TC_10ItemUpdateRemove -->
-      <class name="Amazon1.TC_3AmazonLoginFail">
+      <class name="Amazon1.TC_9AddToCart">
         <methods>
           <include name="browserLaunch"/>
-          <include name="loginWithInvalidEmail" invocation-numbers="0 1"/>
+          <include name="loginwithDDT"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- Amazon1.TC_3AmazonLoginFail -->
-      <class name="Amazon1.TC_11Checkout_AddressSelection">
-        <methods>
-          <include name="browserLaunch"/>
-          <include name="selectingAddressPaymentMethod" invocation-numbers="0"/>
-          <include name="browserQuit"/>
-        </methods>
-      </class> <!-- Amazon1.TC_11Checkout_AddressSelection -->
-      <class name="Amazon1.TC_6Filters">
-        <methods>
-          <include name="browserLaunch"/>
-          <include name="loginwithDDT" invocation-numbers="0"/>
-          <include name="browserQuit"/>
-        </methods>
-      </class> <!-- Amazon1.TC_6Filters -->
+      </class> <!-- Amazon1.TC_9AddToCart -->
       <class name="Amazon1.TC_4EditYourProfile">
         <methods>
-          <include name="loginwithDDT" invocation-numbers="0 1"/>
+          <include name="loginwithDDT"/>
           <include name="browserLaunch"/>
           <include name="browserQuit"/>
         </methods>

@@ -1,13 +1,10 @@
 package Amazon1;
 
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import Amazon1.AmazonHomeLoginPage;
-import AmazonUtils.Excelsheet;
+import AmazonUtils.DataForInvalid;
 import AmazonUtils.IRetryAnalizerforTC;
 import AmazonUtils.ITestListernsForTC;
 //3 Ensure login fails with incorrect email or password.
@@ -16,7 +13,7 @@ public class TC_3AmazonLoginFail extends AmazonBaseClass
 {
 
 	@Parameters("browser")
-	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class,retryAnalyzer = IRetryAnalizerforTC.class)
+	@Test(dataProvider="loginData1",dataProviderClass = DataForInvalid.class,retryAnalyzer = IRetryAnalizerforTC.class)
 	public void loginWithInvalidEmail(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
 		if (driver == null) {

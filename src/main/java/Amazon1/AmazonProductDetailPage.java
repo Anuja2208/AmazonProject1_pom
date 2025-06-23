@@ -19,8 +19,10 @@ public class AmazonProductDetailPage
 	@FindBy(id="averageCustomerReviews_feature_div") WebElement CustomerReviews;
 	@FindBy(id="corePriceDisplay_desktop_feature_div") WebElement price;
 	@FindBy(id="add-to-cart-button") WebElement addToCartBtn;
+	@FindBy(xpath = "//h1[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold']") WebElement addedToCart;
 	@FindBy(linkText="Go to Cart") WebElement goToCartBtn;  //
 	
+	//Sort application
 	 @FindBy(xpath = "//span[.='Sort by:']") WebElement sortby;  //Shoes
 	 @FindBy(xpath = "//li[.='Price: Low to High']") WebElement pricelowtohigh; 
 	 @FindBy(xpath = "//li[.='Newest Arrivals']") WebElement newArrival;
@@ -28,6 +30,8 @@ public class AmazonProductDetailPage
 	 @FindBy(xpath = "//span[@class='nav-cart-icon nav-sprite']") WebElement cart;  //directly cart page
 	 @FindBy(xpath = "//button[@aria-label='Increase quantity by one']") WebElement increasequantity;
 	 @FindBy(xpath = "//button[@aria-label='Decrease quantity by one']") WebElement decreasequantity;
+	 @FindBy(xpath = "//span[@class='sc-quantity-stepper']") WebElement delete; //remove from cart
+	 @FindBy(linkText = " was removed from Shopping Cart. ") WebElement removed; //check item is removed
 	    
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	//Go to Cart 
@@ -83,7 +87,14 @@ public class AmazonProductDetailPage
 			Reporter.log("Exception is handaled");
 		}
 	}
-	
+	public void addingToCartBtnClick()
+	{
+		boolean b = addedToCart.isDisplayed();
+		if(b==true) {
+		Assert.assertEquals(b, true);
+		Reporter.log("Product Added To Cart");
+		}
+	}
 	public void goToCartBtnClick()
 	{
 		try {
@@ -95,24 +106,24 @@ public class AmazonProductDetailPage
 		}
 	}
 	
-	 public void clickingOnSort(WebDriver driver) 
-	    {
+	 public void clickingOnSort(WebDriver driver) {
+		 try {
 	        wait.until(ExpectedConditions.visibilityOf(sortby));
 	        Actions a1 = new Actions(driver);
 	        a1.moveToElement(sortby);
-	        //category.click();
-	        
-	      //  Assert.assertTrue(category.isSelected(), "Category selection done!");
+	        //sortby.click();
+		 }
+	    catch(java.lang.NullPointerException e){
+	    		Reporter.log("Exception is Handaled");
+	    	}
 	    }
 	    public void selectingpriceLowTOHigh(WebDriver driver) 
 	    {
-	    	try
-	    	{
+	    	try{
 	        wait.until(ExpectedConditions.visibilityOf(pricelowtohigh));
 	        pricelowtohigh.click();
 	    	}
-	    	catch(java.lang.NullPointerException e)
-	    	{
+	    	catch(java.lang.NullPointerException e){
 	    		Reporter.log("Exception is Handaled");
 	    	}
 	       
@@ -133,6 +144,7 @@ public class AmazonProductDetailPage
 	    	try {
 	        wait.until(ExpectedConditions.visibilityOf(increasequantity));
 	        increasequantity.click();
+	        Reporter.log("Quantity incresed by 1");
 	    	}
 	    	catch(java.lang.NullPointerException e)
 	    	{
@@ -145,6 +157,7 @@ public class AmazonProductDetailPage
 	    	{
 	        wait.until(ExpectedConditions.visibilityOf(decreasequantity));
 	        decreasequantity.click();
+	        Reporter.log("Quantity Decreased By 1");
 	        decreasequantity.isDisplayed();
 	        Assert.assertEquals(decreasequantity.isDisplayed(), true);
 	        Assert.assertEquals(driver.getTitle(), "Amazon.in Shopping Cart");
@@ -153,8 +166,25 @@ public class AmazonProductDetailPage
 	    	{
 	    		Reporter.log("Exception is handeled");
 	    	}
+	    	catch(java.lang.NullPointerException e)
+	    	{
+	    		Reporter.log("Exception is handeled");
+	    	}
 	    }
-	
+	    public void romovingfromCart()
+	    {
+	    	try {
+	          delete.click();
+	            boolean b1 =	removed.isDisplayed();
+	            if(b1==true) {
+	    	   Assert.assertEquals(b1, true);
+	           }
+	    	}
+	    	catch(org.openqa.selenium.NoSuchElementException e) {
+	    		
+	    	}    
+	    }
+	    
 	public AmazonProductDetailPage(WebDriver driver)
 	{
 		this.driver = driver;

@@ -35,11 +35,10 @@ public class TC_10ItemUpdateRemove extends AmazonBaseClass
 		result.clickOnFirstProduct(driver);
 		
 		AmazonProductDetailPage addcart = new AmazonProductDetailPage(driver);
-		addcart.addToCartBtnClick();
 		addcart.goToCartBtnClick();
 		addcart.clickincreasequantity(driver);
 		addcart.clickdecreasequantity(driver);
-		
+		addcart.romovingfromCart();
 		
 	}
 
