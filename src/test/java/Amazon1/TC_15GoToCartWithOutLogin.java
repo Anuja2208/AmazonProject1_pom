@@ -15,15 +15,12 @@ public class TC_15GoToCartWithOutLogin extends AmazonBaseClass
 	@Test(retryAnalyzer = IRetryAnalizerforTC.class)
 	public void GoingToCartwithoutLogin() throws InterruptedException
 	{
-		if (driver == null) {
-            System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");
-        }
 		AmazonHomeLoginPage cart = new AmazonHomeLoginPage(driver);
-		cart.contshopping();
+	//	cart.contshopping();
 		cart.searching();
 		
 		AmazonSearchResultPage result = new AmazonSearchResultPage(driver);
-		result.clickOnFirstProduct(driver);
+		result.clickingOnFirstProduct();
 		
 		AmazonProductDetailPage orderpage = new AmazonProductDetailPage(driver);
 		orderpage.addToCartBtnClick();

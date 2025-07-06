@@ -13,33 +13,35 @@ import AmazonUtils.ITestListernsForTC;
 public class TC_10ItemUpdateRemove extends AmazonBaseClass
 {
 	@Parameters("browser")
-	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class)//,retryAnalyzer = IRetryAnalizerforTC.class
+	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class,retryAnalyzer = IRetryAnalizerforTC.class)//
 	public void addRemoveproduct(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
-		if (driver == null) {
-            System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");
-        }
 		AmazonHomeLoginPage login = new AmazonHomeLoginPage(driver);
-		login.contshopping();
+	//	login.contshopping();
 		login.hoveroveraccountandlist(driver);
 		login.signinfromhoverover();
 		login.un(driver, usernameFromExcel);
 		login.continuefromUN();
 		login.pwd(driver, passwordFromExcel);
 		login.signin();
-		login.verifyAccount();
+	//	login.verifyAccount();
 		login.searching();
 		
-		
 		AmazonSearchResultPage result = new AmazonSearchResultPage(driver);
-		result.clickOnFirstProduct(driver);
+		result.clickingOnFirstProduct();
+		
 		
 		AmazonProductDetailPage addcart = new AmazonProductDetailPage(driver);
+		addcart.addToCartBtnClick();
+		addcart.addingToCartBtnClick();
 		addcart.goToCartBtnClick();
-		addcart.clickincreasequantity(driver);
-		addcart.clickdecreasequantity(driver);
+		addcart.cartItemCount();
+		addcart.clickincreasequantity();
+	//	addcart.clickdecreasequantity(driver);
+	//	addcart.quantityBoxSendKeys(driver);
 		addcart.romovingfromCart();
-		
+		addcart.cartItemCountAfterDelete();
+
 	}
 
 }

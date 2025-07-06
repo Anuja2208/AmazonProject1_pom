@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="511.155" tests="17" errors="0" skipped="2" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="792.551" tests="37" errors="0" skipped="22" failures="12">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\ganesh\AppData\Local\Temp\surefire2178115094413603941\surefirebooter-20250622130001779_3.jar C:\Users\ganesh\AppData\Local\Temp\surefire2178115094413603941 2025-06-22T13-00-01_571-jvmRun1 surefire-20250622130001779_1tmp surefire_0-20250622130001779_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ganesh\AppData\Local\Temp\surefire13640855342931552018\surefirebooter-20250630144940825_3.jar C:\Users\ganesh\AppData\Local\Temp\surefire13640855342931552018 2025-06-30T14-49-40_690-jvmRun1 surefire-20250630144940825_1tmp surefire_0-20250630144940825_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\ganesh\eclipse-workspace\AmazonProject1\target\test-classes;C:\Users\ganesh\eclipse-workspace\AmazonProject1\target\classes;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-java\4.33.0\selenium-java-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-api\4.33.0\selenium-api-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.33.0\selenium-chrome-driver-4.33.0.jar;C:\Users\ganesh\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.33.0\selenium-chromium-driver-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-json\4.33.0\selenium-json-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.33.0\selenium-manager-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v135\4.33.0\selenium-devtools-v135-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v136\4.33.0\selenium-devtools-v136-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.33.0\selenium-devtools-v137-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.33.0\selenium-edge-driver-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.33.0\selenium-firefox-driver-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-http\4.33.0\selenium-http-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.33.0\selenium-ie-driver-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.33.0\selenium-remote-driver-4.33.0.jar;C:\Users\ganesh\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\ganesh\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\ganesh\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ganesh\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\ganesh\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\ganesh\.m2\repository\io\opentelemetry\opentelemetry-api\1.50.0\opentelemetry-api-1.50.0.jar;C:\Users\ganesh\.m2\repository\io\opentelemetry\opentelemetry-context\1.50.0\opentelemetry-context-1.50.0.jar;C:\Users\ganesh\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.50.0\opentelemetry-exporter-logging-1.50.0.jar;C:\Users\ganesh\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.50.0\opentelemetry-sdk-common-1.50.0.jar;C:\Users\ganesh\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.50.0\opentelemetry-sdk-extension-autoconfigure-spi-1.50.0.jar;C:\Users\ganesh\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.50.0\opentelemetry-sdk-extension-autoconfigure-1.50.0.jar;C:\Users\ganesh\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.50.0\opentelemetry-sdk-trace-1.50.0.jar;C:\Users\ganesh\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.50.0\opentelemetry-sdk-1.50.0.jar;C:\Users\ganesh\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.50.0\opentelemetry-sdk-metrics-1.50.0.jar;C:\Users\ganesh\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.50.0\opentelemetry-sdk-logs-1.50.0.jar;C:\Users\ganesh\.m2\repository\net\bytebuddy\byte-buddy\1.17.5\byte-buddy-1.17.5.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-os\4.33.0\selenium-os-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.33.0\selenium-safari-driver-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\seleniumhq\selenium\selenium-support\4.33.0\selenium-support-4.33.0.jar;C:\Users\ganesh\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\ganesh\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ganesh\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ganesh\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\ganesh\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\ganesh\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\ganesh\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\ganesh\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ganesh\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\ganesh\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\ganesh\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\ganesh\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\ganesh\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\ganesh\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\ganesh\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\ganesh\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\ganesh\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ganesh\AppData\Local\Temp\surefire2178115094413603941\surefirebooter-20250622130001779_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ganesh\AppData\Local\Temp\surefire13640855342931552018\surefirebooter-20250630144940825_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -57,45 +57,64 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="registration" classname="Amazon1.TC_1AmazonRegistration" time="1.589">
-    <failure message="&#10;[public void Amazon1.TC_1AmazonRegistration.registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).&#10;Data provider mismatch&#10;Method: registration([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3])&#10;Arguments: [(java.lang.String) ,(java.lang.String) 0,(java.lang.String) ]" type="org.testng.internal.reflect.MethodMatcherException"><![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-
-[public void Amazon1.TC_1AmazonRegistration.registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: registration([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3])
-Arguments: [(java.lang.String) ,(java.lang.String) 0,(java.lang.String) ]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-]]></failure>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_2AmazonLogin" time="3.967">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Jun 30, 2025 2:49:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
-  <testcase name="loginWithInvalidEmail[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_3AmazonLoginFail" time="0.0">
-    <skipped message="Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null"/>
+  <testcase name="loginWithInvalidEmail[anujagaikwad86@gmail.com, anuja123](1)" classname="Amazon1.TC_3AmazonLoginFail" time="5.687">
+    <system-err><![CDATA[Jun 30, 2025 2:49:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
   </testcase>
-  <testcase name="loginWithInvalidEmail[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_3AmazonLoginFail" time="0.0">
-    <skipped message="Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null"/>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_4EditYourProfile" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [c8846405927b177012acf76758025e2d, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:65214}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65214/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c8846405927b177012acf76758025e2d"/>
+    <system-err><![CDATA[Jun 30, 2025 2:49:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
   </testcase>
-  <testcase name="loginWithInvalidEmail[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_3AmazonLoginFail" time="2.706">
-    <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_4EditYourProfile" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [6bec8981dbaba4088319d4b2dce274eb, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:65350}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65350/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6bec8981dbaba4088319d4b2dce274eb"/>
+    <system-err><![CDATA[Jun 30, 2025 2:50:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_4EditYourProfile" time="16.096">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [820f3fcb1f10a5dfa64d22e02969c339, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:65499}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65499/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 820f3fcb1f10a5dfa64d22e02969c339" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[.='Hello, Anuja']"}
+  (Session info: MicrosoftEdge=138.0.3351.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [820f3fcb1f10a5dfa64d22e02969c339, findElement {using=xpath, value=//span[.='Hello, Anuja']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:65499}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65499/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 820f3fcb1f10a5dfa64d22e02969c339
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at Amazon1.AmazonHomeLoginPage.verifyAccount(AmazonHomeLoginPage.java:133)
+	at Amazon1.TC_4EditYourProfile.loginwithDDT(TC_4EditYourProfile.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,42 +127,916 @@ ERROR StatusLogger Log4j2 could not find a logging implementation. Please add lo
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 2:50:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
   </testcase>
-  <testcase name="loginwithDDT[, ](1)" classname="Amazon1.TC_2AmazonLogin" time="20.967"/>
-  <testcase name="loginwithDDT[, ](1)" classname="Amazon1.TC_5AmazonSearchProduct" time="3.218"/>
-  <testcase name="applyingFilters[, ](1)" classname="Amazon1.TC_6Filters" time="46.763"/>
-  <testcase name="loginwithDDT[, ](1)" classname="Amazon1.TC_4EditYourProfile" time="49.778"/>
-  <testcase name="loginwithDDT[, ](1)" classname="Amazon1.TC_7ProductPageInfo" time="61.494">
-    <system-out><![CDATA[[]
-]]></system-out>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_5AmazonSearchProduct" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [2d0becaf03e3219d16be786d4e0e5d5a, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49269}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49269/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2d0becaf03e3219d16be786d4e0e5d5a"/>
+    <system-err><![CDATA[Jun 30, 2025 2:50:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
   </testcase>
-  <testcase name="loginwithDDT[, ](1)" classname="Amazon1.TC_8ProductSort" time="32.805"/>
-  <testcase name="loginwithDDT[, ](1)" classname="Amazon1.TC_9AddToCart" time="38.682">
-    <system-out><![CDATA[[]
-[]
-[]
-]]></system-out>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_5AmazonSearchProduct" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [954475d39f2c896b46736e8dfb865e2e, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49379}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49379/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 954475d39f2c896b46736e8dfb865e2e"/>
+    <system-err><![CDATA[Jun 30, 2025 2:51:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
   </testcase>
-  <testcase name="addRemoveproduct[, ](1)" classname="Amazon1.TC_10ItemUpdateRemove" time="49.837">
-    <system-out><![CDATA[[]
-]]></system-out>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_5AmazonSearchProduct" time="15.819">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [fbe1ecf0863aa827b09946dc7667ea33, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49762}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49762/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fbe1ecf0863aa827b09946dc7667ea33" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[.='Hello, Anuja']"}
+  (Session info: MicrosoftEdge=138.0.3351.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [fbe1ecf0863aa827b09946dc7667ea33, findElement {using=xpath, value=//span[.='Hello, Anuja']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49762}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49762/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fbe1ecf0863aa827b09946dc7667ea33
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at Amazon1.AmazonHomeLoginPage.verifyAccount(AmazonHomeLoginPage.java:133)
+	at Amazon1.TC_5AmazonSearchProduct.loginwithDDT(TC_5AmazonSearchProduct.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 2:51:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
   </testcase>
-  <testcase name="selectingAddressPaymentMethod[, ](1)" classname="Amazon1.TC_11Checkout_AddressSelection" time="19.222">
-    <system-out><![CDATA[[[[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]], [[ChromeDriver: chrome on windows (de633b6bf771173dc2a639e808dcffc6)] -> xpath: //img[@class="s-image"]]]
-]]></system-out>
+  <testcase name="applyingFilters[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_6Filters" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [9e95b468dc9f82206d47574dd5e088cd, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49940}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49940/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9e95b468dc9f82206d47574dd5e088cd"/>
+    <system-err><![CDATA[Jun 30, 2025 2:51:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
   </testcase>
-  <testcase name="GoingToCartwithoutLogin" classname="Amazon1.TC_15GoToCartWithOutLogin" time="20.301"/>
-  <testcase name="OrderingProuctWithCoupenCode[, ](1)" classname="Amazon1.TC_13ApplyCoupenCode" time="79.223">
-    <system-out><![CDATA[[]
-]]></system-out>
+  <testcase name="applyingFilters[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_6Filters" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [5bee4db09d8b8e0c9c15d531a3e978ce, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50136}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50136/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5bee4db09d8b8e0c9c15d531a3e978ce"/>
+    <system-err><![CDATA[Jun 30, 2025 2:52:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
   </testcase>
-  <testcase name="givingRatingforLastOrder[, ](1)" classname="Amazon1.TC_14_5StarRatingOnLastOrderProduct" time="92.635"/>
-  <testcase name="paymentMethodValidation[, ](1)" classname="Amazon1.TC_12CheckEachPaymentMethod" time="115.813"/>
+  <testcase name="applyingFilters[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_6Filters" time="15.445">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [aaa02da27bf8053ac20da693dbfc852a, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50252}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50252/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: aaa02da27bf8053ac20da693dbfc852a" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[.='Hello, Anuja']"}
+  (Session info: MicrosoftEdge=138.0.3351.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [aaa02da27bf8053ac20da693dbfc852a, findElement {using=xpath, value=//span[.='Hello, Anuja']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50252}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50252/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aaa02da27bf8053ac20da693dbfc852a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at Amazon1.AmazonHomeLoginPage.verifyAccount(AmazonHomeLoginPage.java:133)
+	at Amazon1.TC_6Filters.applyingFilters(TC_6Filters.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 2:52:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_7ProductPageInfo" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [1d0823672b6cf6e1c63908c4c76264b0, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50369}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50369/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1d0823672b6cf6e1c63908c4c76264b0"/>
+    <system-err><![CDATA[Jun 30, 2025 2:52:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_7ProductPageInfo" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [251505c59764c6485280b9111f368bfd, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50493}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50493/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 251505c59764c6485280b9111f368bfd"/>
+    <system-err><![CDATA[Jun 30, 2025 2:53:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_7ProductPageInfo" time="15.561">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [6379be4382c6147ac7b3862f88ee2dfb, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50620}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50620/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6379be4382c6147ac7b3862f88ee2dfb" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[.='Hello, Anuja']"}
+  (Session info: MicrosoftEdge=138.0.3351.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6379be4382c6147ac7b3862f88ee2dfb, findElement {using=xpath, value=//span[.='Hello, Anuja']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50620}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50620/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6379be4382c6147ac7b3862f88ee2dfb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at Amazon1.AmazonHomeLoginPage.verifyAccount(AmazonHomeLoginPage.java:133)
+	at Amazon1.TC_7ProductPageInfo.loginwithDDT(TC_7ProductPageInfo.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 2:53:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_8ProductSort" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [e9f5b167908392b0c04bdd51746fd951, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50739}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50739/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e9f5b167908392b0c04bdd51746fd951"/>
+    <system-err><![CDATA[Jun 30, 2025 2:53:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_8ProductSort" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [82c641f114aabc68e1bb1a2522bb0646, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50870}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50870/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 82c641f114aabc68e1bb1a2522bb0646"/>
+    <system-err><![CDATA[Jun 30, 2025 2:54:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_8ProductSort" time="15.72">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [2fd3414b7fe0bc0e85211bda4df6c1e1, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51004}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51004/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2fd3414b7fe0bc0e85211bda4df6c1e1" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[.='Hello, Anuja']"}
+  (Session info: MicrosoftEdge=138.0.3351.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2fd3414b7fe0bc0e85211bda4df6c1e1, findElement {using=xpath, value=//span[.='Hello, Anuja']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51004}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51004/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2fd3414b7fe0bc0e85211bda4df6c1e1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at Amazon1.AmazonHomeLoginPage.verifyAccount(AmazonHomeLoginPage.java:133)
+	at Amazon1.TC_8ProductSort.loginwithDDT(TC_8ProductSort.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 2:54:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_9AddToCart" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [959123c883d65c43fc81c8f8dbbc3ee3, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51124}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51124/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 959123c883d65c43fc81c8f8dbbc3ee3"/>
+    <system-err><![CDATA[Jun 30, 2025 2:54:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_9AddToCart" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [5fcef78a36ae06fa6404f4681f49d25a, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51249}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51249/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5fcef78a36ae06fa6404f4681f49d25a"/>
+    <system-err><![CDATA[Jun 30, 2025 2:55:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="loginwithDDT[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_9AddToCart" time="15.711">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Hello, Anuja&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [04f97ec406582723597eeb23aaf16e73, findElement {using=xpath, value=//span[.=&apos;Hello, Anuja&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51370}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51370/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 04f97ec406582723597eeb23aaf16e73" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[.='Hello, Anuja']"}
+  (Session info: MicrosoftEdge=138.0.3351.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [04f97ec406582723597eeb23aaf16e73, findElement {using=xpath, value=//span[.='Hello, Anuja']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51370}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51370/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04f97ec406582723597eeb23aaf16e73
+	at jdk.internal.reflect.GeneratedConstructorAccessor52.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at Amazon1.AmazonHomeLoginPage.verifyAccount(AmazonHomeLoginPage.java:133)
+	at Amazon1.TC_9AddToCart.loginwithDDT(TC_9AddToCart.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 2:55:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="addRemoveproduct[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_10ItemUpdateRemove" time="0.0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: twotabsearchtextbox&apos; (tried for 10 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[Jun 30, 2025 2:55:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="addRemoveproduct[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_10ItemUpdateRemove" time="0.0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: twotabsearchtextbox&apos; (tried for 10 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[Jun 30, 2025 2:56:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="addRemoveproduct[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_10ItemUpdateRemove" time="23.771">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: twotabsearchtextbox&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: twotabsearchtextbox' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonHomeLoginPage.searching(AmazonHomeLoginPage.java:151)
+	at Amazon1.TC_10ItemUpdateRemove.addRemoveproduct(TC_10ItemUpdateRemove.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: MicrosoftEdge=138.0.3351.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [8c68c6340c65cf5ec19c26a927c2d386, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51760}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51760/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c68c6340c65cf5ec19c26a927c2d386
+	at jdk.internal.reflect.GeneratedConstructorAccessor52.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 34 more
+]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 2:56:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="selectingAddressPaymentMethod[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_11Checkout_AddressSelection" time="0.0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Go to Cart&quot;}&#10;  (Session info: MicrosoftEdge=138.0.3351.55)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [5841b79b9e7cb456d93b1403ca51377f, findElement {using=link text, value=Go to Cart}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51889}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51889/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5841b79b9e7cb456d93b1403ca51377f"/>
+    <system-err><![CDATA[Jun 30, 2025 2:56:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="selectingAddressPaymentMethod[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_11Checkout_AddressSelection" time="0.0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: twotabsearchtextbox&apos; (tried for 10 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[Jun 30, 2025 2:57:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="selectingAddressPaymentMethod[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_11Checkout_AddressSelection" time="23.558">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: twotabsearchtextbox&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: twotabsearchtextbox' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonHomeLoginPage.searching(AmazonHomeLoginPage.java:151)
+	at Amazon1.TC_11Checkout_AddressSelection.selectingAddressPaymentMethod(TC_11Checkout_AddressSelection.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: MicrosoftEdge=138.0.3351.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [5d50e052fcac0e01096d79d30d6143eb, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52378}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52378/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5d50e052fcac0e01096d79d30d6143eb
+	at jdk.internal.reflect.GeneratedConstructorAccessor52.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 34 more
+]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 2:57:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="paymentMethodValidation[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_12CheckEachPaymentMethod" time="0.0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: twotabsearchtextbox&apos; (tried for 10 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[Jun 30, 2025 2:58:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="paymentMethodValidation[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_12CheckEachPaymentMethod" time="0.0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: twotabsearchtextbox&apos; (tried for 10 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[Jun 30, 2025 2:58:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="paymentMethodValidation[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_12CheckEachPaymentMethod" time="23.723">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: twotabsearchtextbox&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: twotabsearchtextbox' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonHomeLoginPage.searching(AmazonHomeLoginPage.java:151)
+	at Amazon1.TC_12CheckEachPaymentMethod.paymentMethodValidation(TC_12CheckEachPaymentMethod.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: MicrosoftEdge=138.0.3351.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [12e28d6ce9badecb2f8a95a479ff0c55, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52761}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52761/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 12e28d6ce9badecb2f8a95a479ff0c55
+	at jdk.internal.reflect.GeneratedConstructorAccessor52.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 34 more
+]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 2:59:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="givingRatingforLastOrder[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_14_5StarRatingOnLastOrderProduct" time="0.0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[.=&apos;Returns&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[Jun 30, 2025 2:59:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="givingRatingforLastOrder[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_14_5StarRatingOnLastOrderProduct" time="0.0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[.=&apos;Returns&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[Jun 30, 2025 3:00:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="givingRatingforLastOrder[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_14_5StarRatingOnLastOrderProduct" time="23.52">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[.=&apos;Returns&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[.='Returns']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonHomeLoginPage.clickingReturnsAndOrders(AmazonHomeLoginPage.java:179)
+	at Amazon1.TC_14_5StarRatingOnLastOrderProduct.givingRatingforLastOrder(TC_14_5StarRatingOnLastOrderProduct.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[.='Returns']"}
+  (Session info: MicrosoftEdge=138.0.3351.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [195cb14392231272b3ef90e917f2067e, findElement {using=xpath, value=//span[.='Returns']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53131}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53131/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 195cb14392231272b3ef90e917f2067e
+	at jdk.internal.reflect.GeneratedConstructorAccessor52.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 34 more
+]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 3:00:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="GoingToCartwithoutLogin" classname="Amazon1.TC_15GoToCartWithOutLogin" time="9.213">
+    <system-err><![CDATA[Jun 30, 2025 3:00:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="registration" classname="Amazon1.TC_1AmazonRegistration" time="21.664">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonRegiPage.mobileverification(AmazonRegiPage.java:50)
+	at Amazon1.TC_1AmazonRegistration.registration(TC_1AmazonRegistration.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 3:01:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="OrderingProuctWithCoupenCode[anujagaikwad86@gmail.com, anuja@89](1)" classname="Amazon1.TC_13ApplyCoupenCode" time="0.0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: twotabsearchtextbox&apos; (tried for 10 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[Jun 30, 2025 3:01:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="OrderingProuctWithCoupenCode[anujagaikwad86@gmail.com, anuja@89](2)" classname="Amazon1.TC_13ApplyCoupenCode" time="0.0">
+    <skipped message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: twotabsearchtextbox&apos; (tried for 10 second(s) with 500 milliseconds interval)"/>
+    <system-err><![CDATA[Jun 30, 2025 3:02:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="OrderingProuctWithCoupenCode[anujagaikwad86@gmail.com, anuja@89](3)" classname="Amazon1.TC_13ApplyCoupenCode" time="23.487">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: twotabsearchtextbox&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: twotabsearchtextbox' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Amazon1.AmazonHomeLoginPage.searching(AmazonHomeLoginPage.java:151)
+	at Amazon1.TC_13ApplyCoupenCode.OrderingProuctWithCoupenCode(TC_13ApplyCoupenCode.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: MicrosoftEdge=138.0.3351.55)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ff4d1e98a55030d70405c036e8742d4f, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.55, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53675}, msedge: {msedgedriverVersion: 138.0.3351.55 (3171b71f28b7..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53675/devtoo..., se:cdpVersion: 138.0.3351.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff4d1e98a55030d70405c036e8742d4f
+	at jdk.internal.reflect.GeneratedConstructorAccessor52.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 34 more
+]]></failure>
+    <system-err><![CDATA[Jun 30, 2025 3:02:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
 </testsuite>

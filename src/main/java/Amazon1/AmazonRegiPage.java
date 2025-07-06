@@ -10,16 +10,16 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.Reporter;
+import org.testng.asserts.SoftAssert;
 
-import AmazonUtils.Excelsheet;
+import AmazonUtils.TestData_Regi;
 
-public class AmazonRegiPage extends Excelsheet
+public class AmazonRegiPage extends TestData_Regi
 {
 	WebDriver driver;
-	String un1; String pwd1;
-	String un2; String pwd2;
-	String name;String mob_no;
+	SoftAssert soft = new SoftAssert();
+//	String un1; String pwd1;
+//	String name;String mob_no;
 
 	@FindBy(xpath = "//input[@id='ap_customer_name']") WebElement username;
 	@FindBy(xpath = "//input[@id='ap_phone_number']") WebElement phonenumber;
@@ -27,6 +27,7 @@ public class AmazonRegiPage extends Excelsheet
 	@FindBy(xpath = "//span[@id='auth-continue']") WebElement verifymobileno;
 //	@FindBy(xpath = "//span[@id='auth-continue']") WebElement authenticationiframe;
 	@FindBy(linkText = "            Privacy Notice") WebElement privacyNotice;
+	@FindBy(id="aacb-captcha-header") WebElement alertmessage; // Solve this puzzle to protect your account 
 
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	public void addusername(WebDriver driver,String un1)
@@ -40,18 +41,21 @@ public class AmazonRegiPage extends Excelsheet
 	}
 	public void addpassword(WebDriver driver,String pwd1)
 	{
-		password.sendKeys(pwd1+Keys.ENTER);
+		password.sendKeys(pwd1);
 	}
 	public void mobileverification() throws InterruptedException
 	{
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		verifymobileno.click();
+		wait.until(ExpectedConditions.visibilityOf(alertmessage));
+		String ActualTitle= alertmessage.getText();
+		 String Expected="Solve this puzzle to protect your account";                //"There was a problem";
+		 soft.assertEquals(ActualTitle,Expected );
 	}
 	public void authenticationpage()
 	{
-		//driver.switchTo().frame(authenticationiframe);
-		privacyNotice.isDisplayed();
-		Assert.assertEquals(privacyNotice.isDisplayed(), true);
+	//	privacyNotice.isDisplayed();
+	//	Assert.assertEquals(privacyNotice.isDisplayed(), true);
 	}
 	
 

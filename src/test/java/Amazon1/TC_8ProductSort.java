@@ -15,14 +15,12 @@ import AmazonUtils.ITestListernsForTC;
 public class TC_8ProductSort extends AmazonBaseClass
 {
 	@Parameters("browser")
-	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class)//,retryAnalyzer = IRetryAnalizerforTC.class
+	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class,retryAnalyzer = IRetryAnalizerforTC.class)//
 	public void loginwithDDT(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
-		if (driver == null) {
-            System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");
-        }
+		
 		AmazonHomeLoginPage login = new AmazonHomeLoginPage(driver);
-		login.contshopping();
+	//	login.contshopping();
 		login.hoveroveraccountandlist(driver);
 		login.signinfromhoverover();
 		login.un(driver, usernameFromExcel);
@@ -35,7 +33,8 @@ public class TC_8ProductSort extends AmazonBaseClass
 		//Sort before clicking 1st product
 		AmazonProductDetailPage sort = new AmazonProductDetailPage(driver);
 		sort.clickingOnSort(driver);
-		sort.selectingpriceLowTOHigh(driver);
+	//	sort.selectingpriceLowTOHigh(driver);
+		sort.selectingNewArrival();
 	}	
 	
 

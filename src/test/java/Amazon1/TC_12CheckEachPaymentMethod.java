@@ -16,39 +16,27 @@ public class TC_12CheckEachPaymentMethod extends AmazonBaseClass
 	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class)//,retryAnalyzer = IRetryAnalizerforTC.class
 	public void paymentMethodValidation(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
-		if (driver == null) {
-            System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");
-        }
 		AmazonHomeLoginPage login = new AmazonHomeLoginPage(driver);
-		login.contshopping();
+	//	login.contshopping();
 		login.hoveroveraccountandlist(driver);
 		login.signinfromhoverover();
 		login.un(driver, usernameFromExcel);
 		login.continuefromUN();
 		login.pwd(driver, passwordFromExcel);
 		login.signin();
-		login.verifyAccount();
+	//	login.verifyAccount();
 		login.searching();
 		
 		
 		AmazonSearchResultPage result = new AmazonSearchResultPage(driver);
-		result.clickOnFirstProduct(driver);
+		result.clickingOnFirstProduct();
 		
 		AmazonProductDetailPage orderpage = new AmazonProductDetailPage(driver);
 		//orderpage.addToCartBtnClick();
 		orderpage.goToCartBtnClick();
-		//orderpage.clickincreasequantity(driver);
-
 		
 		AmazonCheckoutPage select = new AmazonCheckoutPage(driver);
 		select.clickingProccedToBuy(driver);
-		select.selectingamazonPayBalancebox(driver);
-		select.selectingcreditdebitcardbox(driver);
-		select.selectingnetbankingbox(driver);
-		select.selectingotherUPIbox(driver);
-		select.selectingCOD(driver);
-    //	select.clickOnusethisPayMethodBtn(driver);
-		
-
+		select.paymentmethods();
 }
 }

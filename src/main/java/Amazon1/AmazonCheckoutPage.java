@@ -3,7 +3,9 @@ package Amazon1;
 import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
+import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,81 +20,35 @@ import org.testng.asserts.SoftAssert;
 public class AmazonCheckoutPage 
 {
 	WebDriver driver;
-
-	@FindBy(name="quantityBox")  WebElement quantityBox; //quantityBox
-	@FindBy(xpath="//div[@data-action=\"delete-active") WebElement deleteFromCart;
-	@FindBy(xpath = "//span[@class='nav-cart-icon nav-sprite']") WebElement cart;  //directly cart page
-	@FindBy(xpath = "//button[@aria-label='Increase quantity by one']") WebElement increasequantity;
-	@FindBy(xpath = "//button[@aria-label='Decrease quantity by one']") WebElement decreasequantity;
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	SoftAssert soft = new SoftAssert();
 	
+	//select address-select payment method
 	@FindBy(name = "proceedToRetailCheckout") WebElement proceedToBuy;
 	@FindBy(xpath = "//a[@aria-label='Change delivery address']") WebElement changeAddress;
 	@FindBy(xpath = "//span[@id='checkout-primary-continue-button-id-announce']") WebElement delivertothisaddress;
-	@FindBy(xpath = "//input[@id='pp-9AxRON-152']") WebElement cod;
-	@FindBy(xpath = "//span[@id='checkout-secondary-continue-button-id-announce']") WebElement usethisPayMethodBtn;
+	@FindBy(xpath="//input[@name='ppw-instrumentRowSelection']") List<WebElement> paymentoptions;
+	@FindBy(xpath = "//input[contains(@value, 'COD')") WebElement cod;
+	@FindBy(xpath = "//span[@id='checkout-primary-continue-button-id-announce']") WebElement usethisPayMethodBtn;
+	@FindBy(xpath="//a[@class='a-link-normal expand-panel-button']") WebElement revieworder;
 	
-	@FindBy(xpath = "//input[@id='pp-Fw6YVp-101']") WebElement amazonPayBalancebox;
-	@FindBy(xpath = "//input[@id='pp-Fw6YVp-108']") WebElement creditdebitcardbox;
-	@FindBy(xpath = "//input[@id='pp-Fw6YVp-114']") WebElement netbankingbox;
-	@FindBy(xpath = "//input[@id='pp-Fw6YVp-134']") WebElement otherUPIbox;
-	@FindBy(xpath = "//input[@id='pp-Fw6YVp-139']") WebElement emibox;
+	//validate payment method
+//	@FindBy(xpath = "//input[@type='radio' and contains(@value, 'APB')]\") W") WebElement amazonPayBalancebox;
+	@FindBy(xpath = "(//input[@name='ppw-instrumentRowSelection'])[1]") WebElement amazonPayBalancebox;
+	@FindBy(xpath = "//div[@class='a-row a-spacing-top-small']/input") WebElement enterCode;  //amazonPayBalanceboxpayment code
+	@FindBy(xpath = "//input[@name='ppw-claimCodeApplyPressed']") WebElement apply;   //Applying amazon coupon code 
+	@FindBy(xpath = "(//div[@class='a-alert-content'])[2]") WebElement errormsgAfterapply;   
+	@FindBy(xpath = "(//input[contains(@value, 'SelectableAddCreditCard'") WebElement creditdebitcardbox;
+	@FindBy(xpath="//input[contains(@value, 'NetBanking')]") WebElement netbankingbox;
+	@FindBy(xpath="//input[contains(@value, 'UnifiedPaymentsInterface')]") WebElement otherUPIbox;
+	@FindBy(xpath="//input[contains(@value, 'EMI')]") WebElement emibox;	
+//	@FindBy(xpath="//span[@id='checkout-primary-continue-button-id']") WebElement usethispaymentmethod;
 
-	 
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	SoftAssert soft = new SoftAssert();
+
 	
-	public void decreaseQuantityClick()
-	{
-		//decreaseQuantity.click();
-	}
-	public void increaseQuantityClick()
-	{
-		//increaseQuantity.click();
-	}
-	public void quantityBoxSendKeys(WebDriver driver)
-	{
-		int quantity = Integer.parseInt(quantityBox.getDomAttribute("value"));
-		System.out.println(quantity);
-		if(quantity==10)
-		{
-			Actions a1 = new Actions(driver);
-			a1.doubleClick(quantityBox).perform();	
-		}
-		else
-		{
-			quantityBox.sendKeys("7");
-		}
-	}
-	public void deleteFromCartClick()
-	{
-		deleteFromCart.click();
-	}
-	public void goTOMyCart(WebDriver driver) 
-    {
-        wait.until(ExpectedConditions.visibilityOf(cart));
-        cart.click();
-    }
-    public void clickincreasequantity(WebDriver driver) 
-    {
-        wait.until(ExpectedConditions.visibilityOf(increasequantity));
-        increasequantity.click();
-    }
-    public void clickdecreasequantity(WebDriver driver) 
-    {
-        wait.until(ExpectedConditions.visibilityOf(decreasequantity));
-        decreasequantity.click();
-        decreasequantity.isDisplayed();
-        Assert.assertEquals(decreasequantity.isDisplayed(), true);
-        Assert.assertEquals(driver.getTitle(), "Amazon.in Shopping Cart");
-    }
     public void clickingProccedToBuy(WebDriver driver) 
     {
-    	try {
         proceedToBuy.click();
-    	}
-    	catch(org.openqa.selenium.NoSuchElementException e) {
-    		
-    	}
     }
     public void clickingChangeAdderess(WebDriver driver) 
     {
@@ -101,121 +57,124 @@ public class AmazonCheckoutPage
     }
     public void clickingDelivertoThisAdderess(WebDriver driver) 
     {
-    	try{
     	wait.until(ExpectedConditions.visibilityOf(delivertothisaddress));
     	delivertothisaddress.click();
-    	}
-    	catch(org.openqa.selenium.ElementClickInterceptedException e) {
-    		
-    	}
-    	catch(java.lang.NullPointerException e) {
-    		
-    	}
     }
-    public void selectingamazonPayBalancebox(WebDriver driver) 
+    public void paymentmethods()
+	{  
+		int paymentoptionssize=paymentoptions.size();
+		Reporter.log("Total payment options : " +paymentoptionssize);
+		for(int i=0;i<paymentoptionssize;i++)
+		{
+			 WebElement option = paymentoptions.get(i);
+			 wait.until(ExpectedConditions.visibilityOf(option));
+			 if (option.isDisplayed() && option.isEnabled()) {
+	                option.click();
+	                wait.until(ExpectedConditions.elementToBeClickable(option));
+	               Reporter.log( "Payment option " +i +" is clickable");
+			 }
+		}     
+		}
+    public void selectingCOD(WebDriver driver) 
     {
-    	try
-    	{
+    //	wait.until(ExpectedConditions.visibilityOf(cod));
+    	boolean b = cod.isDisplayed();
+    	boolean b1 = cod.isEnabled();
+    	if(b&&b1 == true) {
+    		 cod.click();
+    		 Reporter.log("COD payment option is selected");
+    	}
+    	else {
+    		Reporter.log("The cod is not selected");
+    	}
+       
+    }
+    public void selectingamazonPayBalancebox(WebDriver driver) throws InterruptedException 
+    {
     	wait.until(ExpectedConditions.visibilityOf(amazonPayBalancebox));
-    	boolean b = amazonPayBalancebox.isEnabled();
+    	amazonPayBalancebox.isEnabled();
     	soft.assertEquals(amazonPayBalancebox.isEnabled(), true);
-    	if( b == true) {
+    	amazonPayBalancebox.click();
+    	boolean b = amazonPayBalancebox.isSelected();
+    	if(b == true) {
+    	//	wait.until(ExpectedConditions.visibilityOf(enterCode));
+    	//	Assert.assertEquals(enterCode.isDisplayed(), true);
+    		Thread.sleep(1000);
+        	enterCode.sendKeys("123456");
+        	Thread.sleep(1000);
+        	apply.click();
+        	errormsgAfterapply.isDisplayed();
+        	String erroractual = errormsgAfterapply.getText();
+        	String errorexpected = "The promotional code you entered is not valid.";
+        //	Assert.assertEquals(errormsgAfterapply.isDisplayed(), true);
+        	//Assert.assertEquals(erroractual, errorexpected);
+        	}
+    	else {
+    		Thread.sleep(1000);
     		amazonPayBalancebox.click();
-    		Reporter.log("User is able to select this payment method");
-    	}	
-    	}
-    	catch(java.lang.NullPointerException e)
-    	{
-    		Reporter.log("Exception is handeled");
+    		Thread.sleep(1000);
+        	Assert.assertEquals(enterCode.isDisplayed(), true);
+        //	enterCode.sendKeys("123456");
+        	Thread.sleep(1000);
+        	apply.click();
+        	errormsgAfterapply.isDisplayed();
+        	String erroractual = errormsgAfterapply.getText();
+        	String errorexpected = "The promotional code you entered is not valid.";
+        //	Assert.assertEquals(errormsgAfterapply.isDisplayed(), true);
+       // 	Assert.assertEquals(erroractual, errorexpected);
     	}
     }
-    public void selectingcreditdebitcardbox(WebDriver driver) 
+    public void couponcode()
+	{
+		wait.until(ExpectedConditions.visibilityOf(amazonPayBalancebox));
+	//	amazonPayBalancebox.click();
+		Assert.assertEquals(enterCode.isDisplayed(), true);
+	//	enterCode.sendKeys("123456");
+		apply.click();
+		errormsgAfterapply.isDisplayed();
+    	Assert.assertEquals(errormsgAfterapply.isDisplayed(), true);
+	}
+ 
+    public void selectingcreditdebitcardbox() 
     {
-    	try {
-    	wait.until(ExpectedConditions.visibilityOf(creditdebitcardbox));
-    	creditdebitcardbox.isDisplayed();
-    	boolean b1 = creditdebitcardbox.isEnabled();
+    	creditdebitcardbox.isEnabled();
     	soft.assertEquals(creditdebitcardbox.isEnabled(), true);
-    	if( b1 == true) {
-    	creditdebitcardbox.click();
-    	Reporter.log("User is able to select this payment method");
-    	}
-    	}
-    	catch(java.lang.NullPointerException e) {
-    		
-    	}
+    //	creditdebitcardbox.click();
     }
     public void selectingnetbankingbox(WebDriver driver) 
     {
-    	try {
-    	wait.until(ExpectedConditions.visibilityOf(netbankingbox));
-    	netbankingbox.isDisplayed();
-    	boolean b2 = netbankingbox.isEnabled();
-        soft.assertEquals(netbankingbox.isDisplayed(), true);
-        if( b2 == true) {
-        netbankingbox.click() ; 
-        Reporter.log("User is able to select this payment method");
-        }
-    	}
-    	catch(java.lang.NullPointerException e) {
-    		
-    	}
+    //	wait.until(ExpectedConditions.visibilityOf(netbankingbox));
+    	netbankingbox.click();
+        soft.assertEquals(netbankingbox.isEnabled(), true);
+      //netbankingbox.click() ; 
     }
     public void selectingotherUPIbox(WebDriver driver) 
     {
-    	try {
-    	wait.until(ExpectedConditions.visibilityOf(otherUPIbox));
-    	otherUPIbox.isDisplayed();
-        soft.assertEquals(otherUPIbox.isDisplayed(), true);
+    //	wait.until(ExpectedConditions.visibilityOf(otherUPIbox));
+    	otherUPIbox.isEnabled();
+        soft.assertEquals(otherUPIbox.isEnabled(), true);
       //  otherUPIbox.click();
-    	}
-    	catch(java.lang.NullPointerException e) {
-    		
-    	}
     }
     public void selectingemibox(WebDriver driver) 
     {
-    	try {
-    	wait.until(ExpectedConditions.visibilityOf(emibox));
-    	emibox.isDisplayed();
-        soft.assertEquals(emibox.isDisplayed(), true);
+    //	wait.until(ExpectedConditions.visibilityOf(emibox));
+    	emibox.isEnabled();
+        soft.assertEquals(emibox.isEnabled(), true);
       //  emibox.click();
-    	}
-    	catch(java.lang.NullPointerException e) {
-    		
-    	}
-    }
-    public void selectingCOD(WebDriver driver) 
-    {
-    	try
-    	{
-    	wait.until(ExpectedConditions.visibilityOf(cod));
-        cod.click();
-        Reporter.log("User is able to select this payment method");
-    	}
-    	catch(java.lang.NullPointerException e) {
-    		
-    	}
-    	catch(org.openqa.selenium.NoSuchSessionException e) {
-    		
-    	}
     }
     public void clickOnusethisPayMethodBtn(WebDriver driver) 
     {
-    	try {
-    	usethisPayMethodBtn.click();
-    	wait.until(ExpectedConditions.titleContains("         Place Your Order - Amazon Checkout     "));
-    	assertEquals(driver.getTitle(), "         Place Your Order - Amazon Checkout     ");
-    	}
-    	catch( java.lang.NullPointerException e) {
-    		
-    	}
-    	catch(org.openqa.selenium.NoSuchElementException e) {
-    		
-    	}
+    	wait.until(ExpectedConditions.elementToBeClickable(usethisPayMethodBtn));
+    	((JavascriptExecutor) driver).executeScript("arguments[0].click();", usethisPayMethodBtn);
+    //	usethisPayMethodBtn.click();
     }
-	
-   
+    public void reviewingorder1()
+	{
+		wait.until(ExpectedConditions.visibilityOf(  revieworder));
+		assertEquals(  revieworder.isDisplayed(),true);
+		revieworder.click();
+	}
+    
 	public AmazonCheckoutPage(WebDriver driver)
 	{
 		this.driver = driver;

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/3/4</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 22 12:15:50 EDT 2025</td>
+<td>Started on:</td><td>Thu Jul 03 14:00:43 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>545 seconds (545291 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25199 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,24 +76,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail()'><b>loginWithInvalidEmail</b><br>Test class: Amazon1.TC_3AmazonLoginFail<br>Parameters: null, null<br/>
-<a href="#Output-1578046139" onClick='toggleBox("Output-1578046139", this, "Show output", "Hide output");'>Show output</a>
+<td title='Amazon1.TC_13ApplyCoupenCode.OrderingProuctWithCoupenCode()'><b>OrderingProuctWithCoupenCode</b><br>Test class: Amazon1.TC_13ApplyCoupenCode<br>Parameters: anujagaikwad86@gmail.com, anuja@89<br/>
+<a href="#Output-1185512662" onClick='toggleBox("Output-1185512662", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1578046139" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1578046139">
-Invalid Username is entered<br/>
-Test case failed: loginWithInvalidEmail<br/>
+<a href="#Output-1185512662" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1185512662">
+Test case failed: OrderingProuctWithCoupenCode<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;ap_password&apos;]&quot;}
-  (Session info: chrome=137.0.7151.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@id=&apos;pp-VQdIpU-105 because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//input[@id=&apos;pp-VQdIpU-105&apos; is not a valid XPath expression.
+  (Session info: MicrosoftEdge=138.0.3351.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4c521acbf2ab9e235b114f18331eef9f, findElement {value=//input[@id=&apos;ap_password&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\ganesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52912}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52912/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4c521acbf2ab9e235b114f18331eef9f
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c297a8963dd840ce7a2e2ca92e6363ef, findElement {value=//input[@id=&apos;pp-VQdIpU-105, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56242}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56242/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c297a8963dd840ce7a2e2ca92e6363ef
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -107,25 +107,27 @@ Session ID: 4c521acbf2ab9e235b114f18331eef9f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at Amazon1.AmazonHomeLoginPage.pwdinvalid(AmazonHomeLoginPage.java:157)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:28)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+	at Amazon1.AmazonCheckoutPage.selectingamazonPayBalancebox(AmazonCheckoutPage.java:103)
+	at Amazon1.TC_13ApplyCoupenCode.OrderingProuctWithCoupenCode(TC_13ApplyCoupenCode.java:40)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1578046139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1578046139'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;ap_password&apos;]&quot;}
-  (Session info: chrome=137.0.7151.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1185512662", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1185512662'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@id=&apos;pp-VQdIpU-105 because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//input[@id=&apos;pp-VQdIpU-105&apos; is not a valid XPath expression.
+  (Session info: MicrosoftEdge=138.0.3351.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4c521acbf2ab9e235b114f18331eef9f, findElement {value=//input[@id=&apos;ap_password&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\ganesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52912}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52912/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4c521acbf2ab9e235b114f18331eef9f
-	at jdk.internal.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source)
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c297a8963dd840ce7a2e2ca92e6363ef, findElement {value=//input[@id=&apos;pp-VQdIpU-105, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56242}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\ganesh\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56242/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c297a8963dd840ce7a2e2ca92e6363ef
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -142,525 +144,9 @@ Session ID: 4c521acbf2ab9e235b114f18331eef9f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at Amazon1.AmazonHomeLoginPage.pwdinvalid(AmazonHomeLoginPage.java:157)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>14</td>
-<td>Amazon1.TC_3AmazonLoginFail@5aa9e4eb</td></tr>
-<tr>
-<td title='Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail()'><b>loginWithInvalidEmail</b><br>Test class: Amazon1.TC_3AmazonLoginFail<br>Parameters: anujagaikwad86@gmail.com, anuja@89<br/>
-<a href="#Output-1535147766" onClick='toggleBox("Output-1535147766", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1535147766" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1535147766">
-Exception is handaled<br/>
-Invalid Username is entered<br/>
-Invalid Password is entered<br/>
-Exception is Handeled<br/>
-Test case failed: loginWithInvalidEmail<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1535147766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1535147766'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>58</td>
-<td>Amazon1.TC_3AmazonLoginFail@5aa9e4eb</td></tr>
-<tr>
-<td title='Amazon1.TC_1AmazonRegistration.registration()'><b>registration</b><br>Test class: Amazon1.TC_1AmazonRegistration</td>
-<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void Amazon1.TC_1AmazonRegistration.registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: registration([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3])
-Arguments: [(java.lang.String) ,(java.lang.String) 0,(java.lang.String) ]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1188348419", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1188348419'><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void Amazon1.TC_1AmazonRegistration.registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: registration([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3])
-Arguments: [(java.lang.String) ,(java.lang.String) 0,(java.lang.String) ]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>1</td>
-<td>Amazon1.TC_1AmazonRegistration@765d7657</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Amazon1.TC_4EditYourProfile.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_4EditYourProfile<br>Parameters: , <br/>
-<a href="#Output-1302825071" onClick='toggleBox("Output-1302825071", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1302825071" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1302825071">
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is handaled<br/>
-Exception is handeled<br/>
-Exception is handeled<br/>
-Exception is handeled<br/>
-Test case passed: loginwithDDT<br/>
-</div>
-</td>
-<td></td>
-<td>185</td>
-<td>Amazon1.TC_4EditYourProfile@6989da5e</td></tr>
-<tr>
-<td title='Amazon1.TC_9AddToCart.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_9AddToCart<br>Parameters: , <br/>
-<a href="#Output-161802921" onClick='toggleBox("Output-161802921", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-161802921" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-161802921">
-Exception is handaled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handaled<br/>
-Exception is handaled<br/>
-Test case passed: loginwithDDT<br/>
-</div>
-</td>
-<td></td>
-<td>146</td>
-<td>Amazon1.TC_9AddToCart@7dcf94f8</td></tr>
-<tr>
-<td title='Amazon1.TC_12CheckEachPaymentMethod.paymentMethodValidation()'><b>paymentMethodValidation</b><br>Test class: Amazon1.TC_12CheckEachPaymentMethod<br>Parameters: , <br/>
-<a href="#Output-103865917" onClick='toggleBox("Output-103865917", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-103865917" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-103865917">
-Exception is handaled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handaled<br/>
-Exception is handeled<br/>
-Test case passed: paymentMethodValidation<br/>
-</div>
-</td>
-<td></td>
-<td>272</td>
-<td>Amazon1.TC_12CheckEachPaymentMethod@662ac478</td></tr>
-<tr>
-<td title='Amazon1.TC_2AmazonLogin.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_2AmazonLogin<br>Parameters: , <br/>
-<a href="#Output-1215430845" onClick='toggleBox("Output-1215430845", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1215430845" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1215430845">
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Test case passed: loginwithDDT<br/>
-</div>
-</td>
-<td></td>
-<td>94</td>
-<td>Amazon1.TC_2AmazonLogin@3fc2959f</td></tr>
-<tr>
-<td title='Amazon1.TC_6Filters.applyingFilters()'><b>applyingFilters</b><br>Test class: Amazon1.TC_6Filters<br>Parameters: , <br/>
-<a href="#Output-290698816" onClick='toggleBox("Output-290698816", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-290698816" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-290698816">
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is handeled<br/>
-Exception is handeled<br/>
-Exception is handeled<br/>
-Test case passed: applyingFilters<br/>
-</div>
-</td>
-<td></td>
-<td>186</td>
-<td>Amazon1.TC_6Filters@139982de</td></tr>
-<tr>
-<td title='Amazon1.TC_7ProductPageInfo.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_7ProductPageInfo<br>Parameters: , <br/>
-<a href="#Output-58185697" onClick='toggleBox("Output-58185697", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-58185697" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-58185697">
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handaled<br/>
-Test case passed: loginwithDDT<br/>
-</div>
-</td>
-<td></td>
-<td>157</td>
-<td>Amazon1.TC_7ProductPageInfo@682b2fa</td></tr>
-<tr>
-<td title='Amazon1.TC_5AmazonSearchProduct.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_5AmazonSearchProduct<br>Parameters: , <br/>
-<a href="#Output-1913500186" onClick='toggleBox("Output-1913500186", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1913500186" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1913500186">
-Exception is handaled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Test case passed: loginwithDDT<br/>
-</div>
-</td>
-<td></td>
-<td>121</td>
-<td>Amazon1.TC_5AmazonSearchProduct@385c9627</td></tr>
-<tr>
-<td title='Amazon1.TC_15GoToCartWithOutLogin.GoingToCartwithoutLogin()'><b>GoingToCartwithoutLogin</b><br>Test class: Amazon1.TC_15GoToCartWithOutLogin<br/>
-<a href="#Output-195609695" onClick='toggleBox("Output-195609695", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-195609695" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-195609695">
-Exception is handaled<br/>
-Exception is Handaled<br/>
-Test case passed: GoingToCartwithoutLogin<br/>
-</div>
-</td>
-<td></td>
-<td>25</td>
-<td>Amazon1.TC_15GoToCartWithOutLogin@477b4cdf</td></tr>
-<tr>
-<td title='Amazon1.TC_8ProductSort.loginwithDDT()'><b>loginwithDDT</b><br>Test class: Amazon1.TC_8ProductSort<br>Parameters: , <br/>
-<a href="#Output-1988125944" onClick='toggleBox("Output-1988125944", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1988125944" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1988125944">
-Exception is handaled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handaled<br/>
-Exception is Handaled<br/>
-Test case passed: loginwithDDT<br/>
-</div>
-</td>
-<td></td>
-<td>156</td>
-<td>Amazon1.TC_8ProductSort@217ed35e</td></tr>
-<tr>
-<td title='Amazon1.TC_14_5StarRatingOnLastOrderProduct.givingRatingforLastOrder()'><b>givingRatingforLastOrder</b><br>Test class: Amazon1.TC_14_5StarRatingOnLastOrderProduct<br>Parameters: , <br/>
-<a href="#Output-1451680063" onClick='toggleBox("Output-1451680063", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1451680063" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1451680063">
-Exception is handaled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Test case passed: givingRatingforLastOrder<br/>
-</div>
-</td>
-<td></td>
-<td>144</td>
-<td>Amazon1.TC_14_5StarRatingOnLastOrderProduct@3eb25e1a</td></tr>
-<tr>
-<td title='Amazon1.TC_13ApplyCoupenCode.OrderingProuctWithCoupenCode()'><b>OrderingProuctWithCoupenCode</b><br>Test class: Amazon1.TC_13ApplyCoupenCode<br>Parameters: , <br/>
-<a href="#Output-321017433" onClick='toggleBox("Output-321017433", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-321017433" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-321017433">
-Exception is handaled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handaled<br/>
-Exception is handeled<br/>
-Test case passed: OrderingProuctWithCoupenCode<br/>
-</div>
-</td>
-<td></td>
-<td>175</td>
-<td>Amazon1.TC_13ApplyCoupenCode@6743e411</td></tr>
-<tr>
-<td title='Amazon1.TC_11Checkout_AddressSelection.selectingAddressPaymentMethod()'><b>selectingAddressPaymentMethod</b><br>Test class: Amazon1.TC_11Checkout_AddressSelection<br>Parameters: , <br/>
-<a href="#Output-1386921649" onClick='toggleBox("Output-1386921649", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1386921649" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1386921649">
-Exception is handaled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handaled<br/>
-Exception is handaled<br/>
-Test case passed: selectingAddressPaymentMethod<br/>
-</div>
-</td>
-<td></td>
-<td>217</td>
-<td>Amazon1.TC_11Checkout_AddressSelection@31190526</td></tr>
-<tr>
-<td title='Amazon1.TC_10ItemUpdateRemove.addRemoveproduct()'><b>addRemoveproduct</b><br>Test class: Amazon1.TC_10ItemUpdateRemove<br>Parameters: , <br/>
-<a href="#Output-693720007" onClick='toggleBox("Output-693720007", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-693720007" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-693720007">
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handeled<br/>
-Exception is Handaled<br/>
-Exception is handeled<br/>
-Exception is handeled<br/>
-Test case passed: addRemoveproduct<br/>
-</div>
-</td>
-<td></td>
-<td>190</td>
-<td>Amazon1.TC_10ItemUpdateRemove@229f66ed</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail()'><b>loginWithInvalidEmail</b><br>Test class: Amazon1.TC_3AmazonLoginFail<br>Parameters: null, null<br/>
-<a href="#Output-579966563" onClick='toggleBox("Output-579966563", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-579966563" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-579966563">
-Exception is handaled<br/>
-Invalid Username is entered<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;ap_password&apos;]&quot;}
-  (Session info: chrome=137.0.7151.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cf2edd9020228d0fd6bdafb940e972d8, findElement {value=//input[@id=&apos;ap_password&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\ganesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54058}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54058/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cf2edd9020228d0fd6bdafb940e972d8
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at Amazon1.AmazonHomeLoginPage.pwdinvalid(AmazonHomeLoginPage.java:157)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:28)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace579966563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace579966563'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;ap_password&apos;]&quot;}
-  (Session info: chrome=137.0.7151.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cf2edd9020228d0fd6bdafb940e972d8, findElement {value=//input[@id=&apos;ap_password&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\ganesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54058}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54058/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cf2edd9020228d0fd6bdafb940e972d8
-	at jdk.internal.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at Amazon1.AmazonHomeLoginPage.pwdinvalid(AmazonHomeLoginPage.java:157)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>21</td>
-<td>Amazon1.TC_3AmazonLoginFail@5aa9e4eb</td></tr>
-<tr>
-<td title='Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail()'><b>loginWithInvalidEmail</b><br>Test class: Amazon1.TC_3AmazonLoginFail<br>Parameters: null, null<br/>
-<a href="#Output-1423248592" onClick='toggleBox("Output-1423248592", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1423248592" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1423248592">
-Exception is handaled<br/>
-Invalid Username is entered<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;ap_password&apos;]&quot;}
-  (Session info: chrome=137.0.7151.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [74dc674daa9c285584aff29e84699ea9, findElement {value=//input[@id=&apos;ap_password&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\ganesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62154}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62154/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 74dc674daa9c285584aff29e84699ea9
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at Amazon1.AmazonHomeLoginPage.pwdinvalid(AmazonHomeLoginPage.java:157)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:28)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1423248592", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1423248592'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;ap_password&apos;]&quot;}
-  (Session info: chrome=137.0.7151.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [74dc674daa9c285584aff29e84699ea9, findElement {value=//input[@id=&apos;ap_password&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\ganesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62154}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62154/devtoo..., se:cdpVersion: 137.0.7151.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 74dc674daa9c285584aff29e84699ea9
-	at jdk.internal.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at Amazon1.AmazonHomeLoginPage.pwdinvalid(AmazonHomeLoginPage.java:157)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:28)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+	at Amazon1.AmazonCheckoutPage.selectingamazonPayBalancebox(AmazonCheckoutPage.java:103)
+	at Amazon1.TC_13ApplyCoupenCode.OrderingProuctWithCoupenCode(TC_13ApplyCoupenCode.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -681,105 +167,7 @@ Session ID: 74dc674daa9c285584aff29e84699ea9
 	at java.base/java.lang.Thread.run(Thread.java:842)
 </pre></div></td>
 <td>21</td>
-<td>Amazon1.TC_3AmazonLoginFail@5aa9e4eb</td></tr>
-<tr>
-<td title='Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail()'><b>loginWithInvalidEmail</b><br>Test class: Amazon1.TC_3AmazonLoginFail<br>Parameters: anujagaikwad86@gmail.com, anuja@89<br/>
-<a href="#Output-1302841116" onClick='toggleBox("Output-1302841116", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1302841116" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1302841116">
-Exception is handaled<br/>
-Invalid Username is entered<br/>
-Invalid Password is entered<br/>
-Exception is Handeled<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1302841116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1302841116'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>64</td>
-<td>Amazon1.TC_3AmazonLoginFail@5aa9e4eb</td></tr>
-<tr>
-<td title='Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail()'><b>loginWithInvalidEmail</b><br>Test class: Amazon1.TC_3AmazonLoginFail<br>Parameters: anujagaikwad86@gmail.com, anuja@89<br/>
-<a href="#Output-1519573759" onClick='toggleBox("Output-1519573759", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1519573759" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1519573759">
-Exception is handaled<br/>
-Invalid Username is entered<br/>
-Invalid Password is entered<br/>
-Exception is Handeled<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1519573759", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1519573759'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:189)
-	at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>57</td>
-<td>Amazon1.TC_3AmazonLoginFail@5aa9e4eb</td></tr>
+<td>Amazon1.TC_13ApplyCoupenCode@128d2484</td></tr>
 </table><p>
 </body>
 </html>

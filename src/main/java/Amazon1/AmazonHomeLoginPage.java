@@ -1,3 +1,4 @@
+
 package Amazon1;
 
 import java.time.Duration;
@@ -21,9 +22,9 @@ public class AmazonHomeLoginPage extends Excelsheet
     WebDriver driver;
     String un1; String pwd1;
 	String un2; String pwd2;
-	String name;String mob_no;
+//	String name;String mob_no;
     
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	SoftAssert soft = new SoftAssert();
 	
 	//homepage
@@ -36,7 +37,9 @@ public class AmazonHomeLoginPage extends Excelsheet
 	@FindBy(xpath = "//input[@name='email']") WebElement username;	
 	@FindBy(className = "a-button-input") WebElement contiunebutton;	
 	@FindBy(xpath = "//input[@id='ap_password']") WebElement password;	
-	@FindBy(xpath = "//span[@id='auth-signin-button']") WebElement logIn;	
+	@FindBy(id = "signInSubmit") WebElement logIn;  //input[@id='signInSubmit']
+//	@FindBy(xpath="(//h4[@class='a-alert-heading'])[1]") WebElement alertmessage;
+	@FindBy(id="aacb-captcha-header") WebElement alertmessage; // Solve this puzzle to protect your account                
 	
 	//homepage
 	@FindBy(xpath = "//span[.='Hello, Anuja']") WebElement helloAnuja;
@@ -48,160 +51,105 @@ public class AmazonHomeLoginPage extends Excelsheet
 	@FindBy(xpath = "//span[.='Edit addresses for orders and gifts']") WebElement yourAddress;
 	@FindBy(linkText = "Edit") WebElement edit;
 	
-	//homepage
+	//homepage last order search
 	@FindBy(xpath = "//span[.='Returns']") WebElement returnsNDorders; 
 	@FindBy(xpath = "(//span[.='Search Orders'])[1]") WebElement searchOrders;
    
 	//step 2
-	public void contshopping()
+/*	public void contshopping()
 	{
-		try
+	/*	try
 		{if (driver == null) {
             System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");
         }
 		continueshopping.click();
 		}
-		catch(java.lang.NullPointerException e)
-		{
-			Reporter.log("Exception is handaled");
-		}
 		catch(org.openqa.selenium.NoSuchElementException e)
 		{
 			Reporter.log("Exception is handaled");
-		}
-	}
+		}  
+		wait.until(ExpectedConditions.elementToBeClickable(continueshopping));
+		continueshopping.click();
+	}   */
 	public void hoveroveraccountandlist(WebDriver driver)
 	{
-		try
-		{wait.until(ExpectedConditions.visibilityOf(accountandlist));
+	//	wait.until(ExpectedConditions.visibilityOf(accountandlist));
+		wait.until(ExpectedConditions.elementToBeClickable(accountandlist));
 		Actions a1 = new Actions(driver);
 		a1.moveToElement(accountandlist).perform();
 		//accountandlist.click();
-		}
-		catch(java.lang.NullPointerException e)
-		{
-			Reporter.log("Exception is handaled");
-		}
+		
 	}
 	public void signinfromhoverover()
 	{
-		try
-		{
 		wait.until(ExpectedConditions.visibilityOf(sign_inlink));
 		sign_inlink.click();
-		}
-		catch(java.lang.NullPointerException e)
-		{
-			Reporter.log("Exception is handaled");
-		}
+
 	}
 	public void un(WebDriver driver, String un1) throws InterruptedException
 	{
-		try
-		{
-			wait.until(ExpectedConditions.visibilityOf(username));
+	//	wait.until(ExpectedConditions.visibilityOf(username));
 	    username.sendKeys(un1+Keys.ENTER);
-		}
-		catch(org.openqa.selenium.NoSuchElementException e)
-		{
-			Reporter.log("Exception is Handeled");
-		}
-		catch(java.lang.NullPointerException e)
-		{
-			Reporter.log("Exception is Handeled");
-		}
 		
 	}
 	public void uninvalid(WebDriver driver, String un2) throws InterruptedException
 	{
-		try
-		{
-			wait.until(ExpectedConditions.visibilityOf(username));
+		//	wait.until(ExpectedConditions.visibilityOf(username));
 	        username.sendKeys(un2+Keys.ENTER);
 	        Reporter.log("Invalid Username is entered");
-		}
-		catch(java.lang.NullPointerException e)
-		{
-			Reporter.log("Exception is Handeled");
-		}
+		
 	}
 	public void continuefromUN() throws InterruptedException
 	{
-		try {
 		contiunebutton.click();
 		Assert.assertTrue(true);
-	//	Assert.assertEquals(password.isDisplayed(), false);
-		}
-		catch(org.openqa.selenium.NoSuchElementException e)
-		{
-			Reporter.log("Exception is Handeled");
-		}
+
 	}
 	public void pwd(WebDriver driver, String pwd1) throws InterruptedException
 	{
-		try
-		{
-		wait.until(ExpectedConditions.visibilityOf(password));
-	    password.sendKeys(pwd1+Keys.ENTER);
-		}
-		catch(org.openqa.selenium.NoSuchElementException e)
-		{
-			Reporter.log("Exception is Handeled");
-		}
-		catch(java.lang.NullPointerException e)
-		{
-			Reporter.log("Exception is Handeled");
-		}
+	
+	//	wait.until(ExpectedConditions.visibilityOf(password));
+	    password.sendKeys(pwd1);
+		
 	}
 	public void pwdinvalid(WebDriver driver, String pwd2) throws InterruptedException
 	{
-	    password.sendKeys(pwd2+Keys.ENTER);
+	    password.sendKeys(pwd2);
 	    Reporter.log("Invalid Password is entered");
 	}
 	public void signin() throws InterruptedException
 	{
-		Thread.sleep(1000);
-		
-		try {
-			logIn.click();
-		}
-		catch(org.openqa.selenium.NoSuchElementException e)
-		{
-			Reporter.log("Exception is Handeled");
-		}
+	//	wait.until(ExpectedConditions.elementToBeClickable(logIn));
+		wait.until(ExpectedConditions.visibilityOf(logIn));
+		soft.assertEquals(logIn.isDisplayed(), true);
+		logIn.click();
+
 	}
 	
 	public void verifyAccount() throws InterruptedException
 	{
-		try
-		{
-		wait.until(ExpectedConditions.visibilityOf(helloAnuja));
-		helloAnuja.isDisplayed();
-		Assert.assertEquals(helloAnuja.isDisplayed(), true);
-		}
-		catch(java.lang.NullPointerException e)
-		{
-			Reporter.log("Exception is Handeled");
-		}
-	}
+	//	wait.until(ExpectedConditions.visibilityOf(helloAnuja));
+		Thread.sleep(2000);
+	    boolean b = helloAnuja.isDisplayed(); 
+	    Assert.assertEquals(helloAnuja.isDisplayed(), true);
+	}   
 	public void verifyAccountInvalid() throws InterruptedException
 	{
 		Thread.sleep(2000);
-		wait.until(ExpectedConditions.visibilityOf(helloAnuja));
-	//	helloAnuja.isDisplayed();
-		Assert.assertEquals(helloAnuja.isDisplayed(), false);
-	//	Assert.assertEquals(false, true);
+	    String ActualTitle= alertmessage.getText();
+	    String Expected="There was a problem";
+	    soft.assertEquals(ActualTitle,Expected );
+		Reporter.log("Login with invalid credentials:" +ActualTitle);
+	/*	wait.until(ExpectedConditions.visibilityOf(helloAnuja));
+		helloAnuja.isDisplayed();
+	    Assert.assertEquals(driver.getTitle(),"Authentication required");)
+		Assert.assertEquals(false, true);  */
 	}
 	
 	public void searching()
 	{
-		try {
 		wait.until(ExpectedConditions.visibilityOf(searchtextbox));
 		searchtextbox.sendKeys("Womans Shoe"+Keys.ENTER);
-		}
-		catch(java.lang.NullPointerException e) {
-			Reporter.log("Exception is Handeled");
-		}
 	}
 	public void logout()
 	{
@@ -236,26 +184,21 @@ public class AmazonHomeLoginPage extends Excelsheet
 		{
 			Reporter.log("Exception is Handaled");
 		}
-		catch(java.lang.NullPointerException e) {
-			
-		}
 	}
 	public void ordersSarching()
 	{
-		try {
 		wait.until(ExpectedConditions.visibilityOf(searchOrders));
 		searchOrders.isDisplayed();
 		soft.assertEquals(driver.getTitle(), "Your Orders");
 		soft.assertAll();
-		}
-		catch(java.lang.NullPointerException e) {
-			
-		}
 	}
 	
 	public AmazonHomeLoginPage(WebDriver driver)
 	{
 		this.driver = driver;
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		PageFactory.initElements(driver, this);
 	}
+	
 }
+

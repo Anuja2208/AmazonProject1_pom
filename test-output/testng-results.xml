@@ -1,147 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="5" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Test execution started - Listener]]>
     </line>
     <line>
-      <![CDATA[Test case failed: registration]]>
+      <![CDATA[Edge browser is launched succesfully]]>
     </line>
     <line>
-      <![CDATA[Chrome browser is launched succesfully]]>
+      <![CDATA[Test case passed: OrderingProuctWithCoupenCode]]>
     </line>
     <line>
-      <![CDATA[Test execution started - Listener]]>
-    </line>
-    <line>
-      <![CDATA[Test case failed: registration]]>
-    </line>
-    <line>
-      <![CDATA[Chrome browser is launched succesfully]]>
-    </line>
-    <line>
-      <![CDATA[Exception is handaled]]>
-    </line>
-    <line>
-      <![CDATA[Invalid Username is entered]]>
-    </line>
-    <line>
-      <![CDATA[Invalid Password is entered]]>
-    </line>
-    <line>
-      <![CDATA[Exception is Handeled]]>
-    </line>
-    <line>
-      <![CDATA[Exception is Handeled]]>
-    </line>
-    <line>
-      <![CDATA[Exception is Handeled]]>
-    </line>
-    <line>
-      <![CDATA[Chrome browser is launched succesfully]]>
-    </line>
-    <line>
-      <![CDATA[Exception is handaled]]>
-    </line>
-    <line>
-      <![CDATA[Invalid Username is entered]]>
-    </line>
-    <line>
-      <![CDATA[Invalid Password is entered]]>
-    </line>
-    <line>
-      <![CDATA[Exception is Handeled]]>
-    </line>
-    <line>
-      <![CDATA[Test case passed: loginwithDDT]]>
-    </line>
-    <line>
-      <![CDATA[Exception is Handeled]]>
-    </line>
-    <line>
-      <![CDATA[Chrome browser is launched succesfully]]>
-    </line>
-    <line>
-      <![CDATA[Invalid Username is entered]]>
-    </line>
-    <line>
-      <![CDATA[Invalid Password is entered]]>
-    </line>
-    <line>
-      <![CDATA[Exception is Handeled]]>
-    </line>
-    <line>
-      <![CDATA[Test case failed: loginWithInvalidEmail]]>
+      <![CDATA[Driver is null so screenshot not captured]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-06-22T13:22:59 EDT" name="Suite" finished-at="2025-06-22T13:25:56 EDT" duration-ms="176657">
+  <suite started-at="2025-07-05T20:57:24 EDT" name="Default suite" finished-at="2025-07-05T20:57:50 EDT" duration-ms="26361">
     <groups>
     </groups>
-    <test started-at="2025-06-22T13:22:59 EDT" name="Test" finished-at="2025-06-22T13:25:56 EDT" duration-ms="176657">
-      <class name="Amazon1.TC_2AmazonLogin">
-        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:Amazon1.TC_2AmazonLogin@6a6cb05c]" started-at="2025-06-22T13:23:00 EDT" name="browserLaunch" finished-at="2025-06-22T13:23:03 EDT" duration-ms="2946" status="PASS">
+    <test started-at="2025-07-05T20:57:24 EDT" name="Default test" finished-at="2025-07-05T20:57:50 EDT" duration-ms="26361">
+      <class name="Amazon1.TC_13ApplyCoupenCode">
+        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:Amazon1.TC_13ApplyCoupenCode@7cc0cdad]" started-at="2025-07-05T20:57:24 EDT" name="browserLaunch" finished-at="2025-07-05T20:57:28 EDT" duration-ms="3449" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Chrome browser is launched succesfully]]>
+              <![CDATA[Edge browser is launched succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method signature="loginwithDDT(java.lang.String,java.lang.String)[pri:0, instance:Amazon1.TC_2AmazonLogin@6a6cb05c]" started-at="2025-06-22T13:23:03 EDT" name="loginwithDDT" data-provider="loginData1" finished-at="2025-06-22T13:24:20 EDT" duration-ms="76922" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Exception is Handeled]]>
-            </line>
-            <line>
-              <![CDATA[Exception is Handeled]]>
-            </line>
-            <line>
-              <![CDATA[Exception is Handeled]]>
-            </line>
-            <line>
-              <![CDATA[Test case passed: loginwithDDT]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginwithDDT -->
-        <test-method is-config="true" signature="browserQuit()[pri:0, instance:Amazon1.TC_2AmazonLogin@6a6cb05c]" started-at="2025-06-22T13:24:20 EDT" name="browserQuit" finished-at="2025-06-22T13:24:21 EDT" duration-ms="482" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- Amazon1.TC_2AmazonLogin -->
-      <class name="Amazon1.TC_3AmazonLoginFail">
-        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:Amazon1.TC_3AmazonLoginFail@40a4337a]" started-at="2025-06-22T13:23:00 EDT" name="browserLaunch" finished-at="2025-06-22T13:23:04 EDT" duration-ms="3514" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Chrome browser is launched succesfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- browserLaunch -->
-        <test-method retried="true" signature="loginWithInvalidEmail(java.lang.String,java.lang.String)[pri:0, instance:Amazon1.TC_3AmazonLoginFail@40a4337a]" started-at="2025-06-22T13:23:04 EDT" name="loginWithInvalidEmail" data-provider="loginData1" finished-at="2025-06-22T13:24:03 EDT" duration-ms="59059" status="SKIP">
+        <test-method signature="OrderingProuctWithCoupenCode(java.lang.String,java.lang.String)[pri:0, instance:Amazon1.TC_13ApplyCoupenCode@7cc0cdad]" started-at="2025-07-05T20:57:28 EDT" name="OrderingProuctWithCoupenCode" data-provider="loginData1" finished-at="2025-07-05T20:57:50 EDT" duration-ms="22004" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,252 +46,20 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:190)
-at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
             <line>
-              <![CDATA[Exception is handaled]]>
+              <![CDATA[Test case passed: OrderingProuctWithCoupenCode]]>
             </line>
             <line>
-              <![CDATA[Invalid Username is entered]]>
-            </line>
-            <line>
-              <![CDATA[Invalid Password is entered]]>
-            </line>
-            <line>
-              <![CDATA[Exception is Handeled]]>
+              <![CDATA[Driver is null so screenshot not captured]]>
             </line>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidEmail -->
-        <test-method is-config="true" signature="browserQuit()[pri:0, instance:Amazon1.TC_3AmazonLoginFail@40a4337a]" started-at="2025-06-22T13:24:03 EDT" name="browserQuit" finished-at="2025-06-22T13:24:03 EDT" duration-ms="568" status="PASS">
+        </test-method> <!-- OrderingProuctWithCoupenCode -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:Amazon1.TC_13ApplyCoupenCode@7cc0cdad]" started-at="2025-07-05T20:57:50 EDT" name="browserQuit" finished-at="2025-07-05T20:57:50 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:Amazon1.TC_3AmazonLoginFail@40a4337a]" started-at="2025-06-22T13:24:03 EDT" name="browserLaunch" finished-at="2025-06-22T13:24:05 EDT" duration-ms="1835" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Chrome browser is launched succesfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- browserLaunch -->
-        <test-method retried="true" signature="loginWithInvalidEmail(java.lang.String,java.lang.String)[pri:0, instance:Amazon1.TC_3AmazonLoginFail@40a4337a]" started-at="2025-06-22T13:24:05 EDT" name="loginWithInvalidEmail" data-provider="loginData1" finished-at="2025-06-22T13:25:03 EDT" duration-ms="58298" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[anujagaikwad86@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[anuja@89]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:190)
-at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Exception is handaled]]>
-            </line>
-            <line>
-              <![CDATA[Invalid Username is entered]]>
-            </line>
-            <line>
-              <![CDATA[Invalid Password is entered]]>
-            </line>
-            <line>
-              <![CDATA[Exception is Handeled]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidEmail -->
-        <test-method is-config="true" signature="browserQuit()[pri:0, instance:Amazon1.TC_3AmazonLoginFail@40a4337a]" started-at="2025-06-22T13:25:04 EDT" name="browserQuit" finished-at="2025-06-22T13:25:04 EDT" duration-ms="449" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:Amazon1.TC_3AmazonLoginFail@40a4337a]" started-at="2025-06-22T13:25:04 EDT" name="browserLaunch" finished-at="2025-06-22T13:25:06 EDT" duration-ms="1596" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Chrome browser is launched succesfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- browserLaunch -->
-        <test-method signature="loginWithInvalidEmail(java.lang.String,java.lang.String)[pri:0, instance:Amazon1.TC_3AmazonLoginFail@40a4337a]" started-at="2025-06-22T13:25:06 EDT" name="loginWithInvalidEmail" data-provider="loginData1" finished-at="2025-06-22T13:25:55 EDT" duration-ms="49665" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[anujagaikwad86@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[anuja@89]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at Amazon1.AmazonHomeLoginPage.verifyAccountInvalid(AmazonHomeLoginPage.java:190)
-at Amazon1.TC_3AmazonLoginFail.loginWithInvalidEmail(TC_3AmazonLoginFail.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Invalid Username is entered]]>
-            </line>
-            <line>
-              <![CDATA[Invalid Password is entered]]>
-            </line>
-            <line>
-              <![CDATA[Exception is Handeled]]>
-            </line>
-            <line>
-              <![CDATA[Test case failed: loginWithInvalidEmail]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidEmail -->
-        <test-method is-config="true" signature="browserQuit()[pri:0, instance:Amazon1.TC_3AmazonLoginFail@40a4337a]" started-at="2025-06-22T13:25:55 EDT" name="browserQuit" finished-at="2025-06-22T13:25:56 EDT" duration-ms="569" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- Amazon1.TC_3AmazonLoginFail -->
-      <class name="Amazon1.TC_1AmazonRegistration">
-        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Amazon1.TC_1AmazonRegistration@5656be13]" started-at="2025-06-22T13:23:00 EDT" name="registration" data-provider="loginData1" finished-at="2025-06-22T13:23:00 EDT" duration-ms="0" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-at AmazonUtils.DataSheetForRegistration.loginData(DataSheetForRegistration.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
-... 15 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration -->
-      </class> <!-- Amazon1.TC_1AmazonRegistration -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- Amazon1.TC_13ApplyCoupenCode -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

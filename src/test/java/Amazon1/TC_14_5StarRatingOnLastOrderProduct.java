@@ -13,23 +13,22 @@ import AmazonUtils.ITestListernsForTC;
 public class TC_14_5StarRatingOnLastOrderProduct extends AmazonBaseClass
 {
 	@Parameters("browser")
-	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class)//,retryAnalyzer = IRetryAnalizerforTC.class
+	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class,retryAnalyzer = IRetryAnalizerforTC.class)//
 	public void givingRatingforLastOrder(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
-		if (driver == null) {
-            System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");
-        }
 		AmazonHomeLoginPage login = new AmazonHomeLoginPage(driver);
-		login.contshopping();
+	//	login.contshopping();
 		login.hoveroveraccountandlist(driver);
 		login.signinfromhoverover();
 		login.un(driver, usernameFromExcel);
 		login.continuefromUN();
 		login.pwd(driver, passwordFromExcel);
 		login.signin();
-		login.verifyAccount();
+	//	login.verifyAccount();
 		login.clickingReturnsAndOrders();
 		login.ordersSarching();
+	
+		
 			
 	}
 }

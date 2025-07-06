@@ -14,14 +14,11 @@ import AmazonUtils.ITestListernsForTC;
 public class TC_4EditYourProfile extends AmazonBaseClass
 {
 	@Parameters("browser")
-	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class)//,retryAnalyzer = IRetryAnalizerforTC.class
+	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class,retryAnalyzer = IRetryAnalizerforTC.class)//
 	public void loginwithDDT(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
-		if (driver == null) {
-            System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");
-        }
 		AmazonHomeLoginPage login = new AmazonHomeLoginPage(driver);
-		login.contshopping();
+	//	login.contshopping();
 		login.hoveroveraccountandlist(driver);
 		login.signinfromhoverover();
 		login.un(driver, usernameFromExcel);
@@ -31,12 +28,17 @@ public class TC_4EditYourProfile extends AmazonBaseClass
 		login.verifyAccount();
 		login.hoveroveraccountandlist(driver);
 		
-		
 		AmazonProfileEditPage profile = new AmazonProfileEditPage(driver);
-		profile.goToYourAccount();
-		profile.clickingyouraddress();
-		profile.clickingoneditaddress();
-		profile.settingdefault();
+		profile.goToYourAccount(driver);
+		profile.loginAndSecurityCardClick();
+		profile.clickOneditName();
+		profile.editingNewName();
+		profile.savingNameChange();
+		profile.verifyNameUpdated();
+		
+	//	profile.clickingyouraddress();
+	//	profile.clickingoneditaddress();
+	//	profile.settingdefault();
 	//	profile.defaultsettingdone();
 
 		

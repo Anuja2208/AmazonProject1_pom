@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Amazon1.TC_1AmazonRegistration">
+      <class name="Amazon1.TC_13ApplyCoupenCode">
         <methods>
-          <include name="amazonBrowserLaunch"/>
-          <include name="registration" invocation-numbers="0 1"/>
+          <include name="browserLaunch"/>
+          <include name="OrderingProuctWithCoupenCode" invocation-numbers="0"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- Amazon1.TC_1AmazonRegistration -->
+      </class> <!-- Amazon1.TC_13ApplyCoupenCode -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

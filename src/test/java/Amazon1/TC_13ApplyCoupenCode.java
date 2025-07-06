@@ -16,32 +16,30 @@ public class TC_13ApplyCoupenCode extends AmazonBaseClass
 	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class)//,retryAnalyzer = IRetryAnalizerforTC.class
 	public void OrderingProuctWithCoupenCode(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
-		if (driver == null) {
-            System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");
-        }
 		AmazonHomeLoginPage login = new AmazonHomeLoginPage(driver);
-		login.contshopping();
+	//	login.contshopping();
 		login.hoveroveraccountandlist(driver);
 		login.signinfromhoverover();
 		login.un(driver, usernameFromExcel);
 		login.continuefromUN();
 		login.pwd(driver, passwordFromExcel);
 		login.signin();
-		login.verifyAccount();
+	//	login.verifyAccount();
 		login.searching();
 		
 		AmazonSearchResultPage result = new AmazonSearchResultPage(driver);
-		result.clickOnFirstProduct(driver);
+		result.clickingOnFirstProduct();
 		
 		AmazonProductDetailPage orderpage = new AmazonProductDetailPage(driver);
+		orderpage.addToCartBtnClick();
+
 		orderpage.goToCartBtnClick();
 		
-		AmazonCheckoutPage select = new AmazonCheckoutPage(driver);
-		select.clickingProccedToBuy(driver);
-		select.selectingamazonPayBalancebox(driver); //coupon code addition is remaining
+		AmazonCheckoutPage coupenapply = new AmazonCheckoutPage(driver);
+		coupenapply.clickingProccedToBuy(driver);
+		coupenapply.selectingamazonPayBalancebox(driver); //coupon code addition is remaining
+	//	coupenapply.couponcode();
 	
-
-		
-
+	
 }
 }

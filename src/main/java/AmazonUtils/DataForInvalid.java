@@ -21,8 +21,9 @@ public class DataForInvalid
         Workbook wb = WorkbookFactory.create(f1);
         Sheet s1 = wb.getSheet("LoginDetails"); // sheet name is "LoginDetails"
 
-        String un2 = s1.getRow(2).getCell(2).getStringCellValue();
-        String pwd2 = s1.getRow(2).getCell(3).getStringCellValue();
+     // --- Reading the SECOND data row (Excel Row 3, POI index 2) ---
+        String un2 = s1.getRow(2).getCell(0).getStringCellValue();
+        String pwd2 = s1.getRow(2).getCell(1).getStringCellValue();
        
         Object[][] data = new Object[1][2];
         data[0][0] = un2; // Maps to first parameter of test method

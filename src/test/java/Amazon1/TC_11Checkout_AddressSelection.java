@@ -13,37 +13,32 @@ import AmazonUtils.ITestListernsForTC;
 public class TC_11Checkout_AddressSelection extends AmazonBaseClass
 {
 	@Parameters("browser")
-	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class)//,retryAnalyzer = IRetryAnalizerforTC.class
+	@Test(dataProvider="loginData1",dataProviderClass = Excelsheet.class,retryAnalyzer = IRetryAnalizerforTC.class)//,retryAnalyzer = IRetryAnalizerforTC.class
 	public void selectingAddressPaymentMethod(String usernameFromExcel, String passwordFromExcel) throws InterruptedException
 	{
-		if (driver == null) {
-            System.err.println("WebDriver is null in loginwithDDT BEFORE Page Object creation!");
-        }
 		AmazonHomeLoginPage login = new AmazonHomeLoginPage(driver);
-		login.contshopping();
+	//	login.contshopping();
 		login.hoveroveraccountandlist(driver);
 		login.signinfromhoverover();
 		login.un(driver, usernameFromExcel);
 		login.continuefromUN();
 		login.pwd(driver, passwordFromExcel);
 		login.signin();
-		login.verifyAccount();
 		login.searching();
 		
-		
 		AmazonSearchResultPage result = new AmazonSearchResultPage(driver);
-		result.clickOnFirstProduct(driver);
+		result.clickingOnFirstProduct();
 		
 		AmazonProductDetailPage orderpage = new AmazonProductDetailPage(driver);
-		orderpage.addToCartBtnClick();
+	//	orderpage.addToCartBtnClick();
 		orderpage.goToCartBtnClick();
 		
 		AmazonCheckoutPage checkout = new AmazonCheckoutPage(driver);
 		checkout.clickingProccedToBuy(driver);
 		checkout.clickingDelivertoThisAdderess(driver);
-		checkout.selectingCOD(driver);
+		checkout.paymentmethods();
 		checkout.clickOnusethisPayMethodBtn(driver);
+		checkout.reviewingorder1();	
 		
-
 }
 }
